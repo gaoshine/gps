@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# GPS服务器端代码,负责接收GPS设备上报的数据和下发命令指令,负责接收GPS上传信息并整理后在发送给指定的API
+# GPS服务器端代码,负责接收GPS设备上报的数据和下发命令指令,负责接收GPS上传信息并整理后在发送给指定的API1
 
 import time, socket, threading
 #导入JSON
