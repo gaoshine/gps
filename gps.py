@@ -62,7 +62,7 @@ def decodegps(mGPS):
         break
     if (x + y) < 1:
         return
-    d = baidugps(x, y)
+    d = baidugps(x, y)  //百度和gps坐标转换
     print d
     print d[0]['x'], d[0]['y']
     info['lon'] = d[0]['x']

@@ -35,3 +35,30 @@ def jsonpost(GPSDataJson):
         #print s['status']
     except Exception,ex:
         print 'error',':',ex
+
+
+def baidugps(lon,lat):
+    values = {}
+    #http://api.map.baidu.com/geoconv/v1/?coords=114.21892734521,29.575429778924;114.21892734521,29.575429778924&ak=C272f5eb78abb8c1ad9b0df264e000c8&output=json
+    try:
+
+        #values['GPSDataJson'] = '{"IMEI": "695501000029329", "battery": "99.0", "lon": "114.054145", "date": "2016-01-18", "time": "18:16:39", "lat": "22.615287"}'
+
+        values["output"] =  'json'
+        values["ak"] = 'C272f5eb78abb8c1ad9b0df264e000c8'
+        values["coords"] =  str(lon) + ',' + str(lat)
+
+        data = urllib.urlencode(values)
+
+        url = "http://api.map.baidu.com/geoconv/v1"
+        geturl = url + "/?"+data
+        #print geturl
+        request = urllib2.Request(geturl)
+        response = urllib2.urlopen(request)
+        r =response.read()
+        #d=JSONDecoder().decode(r)
+        #return d["result"]
+        s = json.loads(r)
+        return s["result"]
+    except Exception,ex:
+        print 'error',':',ex

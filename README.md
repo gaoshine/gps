@@ -51,6 +51,10 @@ GPS服务器端代码
 * 查询IP链表	IPLOOK	回复：+iplist,number:n,ip1:port1,ipn:portn
 
 
+2016-2-18 根据需求加入了百度坐标的转换函数,baidugps(lon,lat) 传入gps的lon,lat 返回json格式的百度坐标(python字典格式)
+
+
+
 
 
 
