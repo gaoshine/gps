@@ -16,7 +16,7 @@ def tcplink(sock, addr):
     while True:
         data = sock.recv(1024)
         time.sleep(1)
-
+        #心跳和注册报文
         if isheart(data):
             sock.send('*MG20,YAH#')
         if islogin(data):
