@@ -18,9 +18,9 @@ def tcplink(sock, addr):
         time.sleep(1)
 
         if isheart(data):
-            sock.send('*MG20,YAH')
+            sock.send('*MG20,YAH#')
         if islogin(data):
-            sock.send('*MG20,YAB')
+            sock.send('*MG20,YAB#')
 
         jsonpost(decodegps(data))
         mlog('gps', data)
