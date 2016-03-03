@@ -16,6 +16,12 @@ def tcplink(sock, addr):
     while True:
         data = sock.recv(1024)
         time.sleep(1)
+
+        if isheart(data):
+            sock.send('*MG20,YAH')
+        if islogin(data):
+            sock.send('*MG20,YAB')
+
         jsonpost(decodegps(data))
         mlog('gps', data)
         print 'Rev:%s' % data
@@ -34,7 +40,7 @@ def mlog(TAG, txt):
 
 
 def decodegps(mGPS):
-    pattern = re.compile('MG201(\d{15}),AB&A(\d{6})(\d{8})(\d{9})([0-9])(\d{2})(\d{2})(\d{6})', re.IGNORECASE)
+    pattern = re.compile('MG200(\d{15}),BA&A(\d{6})(\d{8})(\d{9})([0-9])(\d{2})(\d{2})(\d{6})', re.IGNORECASE)
     x = 0.0
     y = 0.0
     info = {}
@@ -62,7 +68,7 @@ def decodegps(mGPS):
         break
     if (x + y) < 1:
         return
-    d = baidugps(x, y)  //百度和gps坐标转换
+    d = baidugps(x, y)  #百度和gps坐标转换
     print d
     print d[0]['x'], d[0]['y']
     info['lon'] = d[0]['x']
@@ -80,6 +86,30 @@ def decodegps(mGPS):
     jsonStr = json.dumps(info)
     # print jsonStr
     return jsonStr
+
+#u判断是否是心跳包
+def isheart(mGPS):
+    pattern = re.compile('MG201(\d{15}),AH&B', re.IGNORECASE)
+    items = re.findall(pattern, mGPS)
+    if items :
+        jsonStr = True
+    else:
+        jsonStr = False
+    # print jsonStr
+    return jsonStr
+
+#u判断是否是登陆包
+def islogin(mGPS):
+    pattern = re.compile('MG201(\d{15}),AB&A', re.IGNORECASE)
+    items = re.findall(pattern, mGPS)
+    if items :
+        jsonStr = True
+    else:
+        jsonStr = False
+    # print jsonStr
+    return jsonStr
+
+
 
 
 if __name__ == '__main__':
