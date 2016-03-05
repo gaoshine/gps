@@ -8,6 +8,7 @@ import string
 # 导入re模块
 import re
 from jsonpost import jsonpost, baidugps
+from sql import find,pointadd
 
 
 def tcplink(sock, addr):
@@ -21,8 +22,11 @@ def tcplink(sock, addr):
             sock.send('*MG20,YAH#')
         if islogin(data):
             sock.send('*MG20,YAB#')
-
-        jsonpost(decodegps(data))
+        r = decodegps(data)
+        #写入数据库
+        pointadd(r)
+        #发送给API(写入车辆管理的定位数据)
+        jsonpost(r)
         mlog('gps', data)
         print 'Rev:%s' % data
         if data == 'exit' or not data:
