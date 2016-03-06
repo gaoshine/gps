@@ -7,7 +7,7 @@ import json
 import string
 # 导入re模块
 import re
-from jsonpost import jsonpost, baidugps
+from jsonpost import jsonpost, baidugps, lbs
 from sql import find,pointadd
 
 
@@ -113,7 +113,15 @@ def islogin(mGPS):
     # print jsonStr
     return jsonStr
 
-
+def getLBS(mGPS):
+    pattern = re.compile('MG201(\d{15}),AB&X', re.IGNORECASE)
+    items = re.findall(pattern, mGPS)
+    if items :
+        jsonStr = True
+    else:
+        jsonStr = False
+    # print jsonStr
+    return jsonStr
 
 
 if __name__ == '__main__':

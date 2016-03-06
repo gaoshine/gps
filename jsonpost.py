@@ -62,3 +62,34 @@ def baidugps(lon,lat):
         return s["result"]
     except Exception,ex:
         print 'error',':',ex
+
+
+
+def lbs(mcc,mnc,lac,ci):
+    values = {}
+    # LBS接口：http://api.cellocation.com/cell/?mcc=460&mnc=0&lac=12573&ci=63441&output=json
+    try:
+
+        values["output"] =  'json'
+        values["mcc"] = mcc
+        values["mnc"] = mnc
+        values["ci"] = ci
+        values["lac"] = lac
+
+        data = urllib.urlencode(values)
+
+        url = "http://api.cellocation.com/cell"
+        geturl = url + "/?"+data
+        print geturl
+        request = urllib2.Request(geturl)
+        response = urllib2.urlopen(request)
+        r =response.read()
+        d=JSONDecoder().decode(r)
+        print d['errcode'],d['address']
+        #return d["result"]
+        #s = json.loads(r)
+        #return s["result"]
+        return r
+
+    except Exception,ex:
+        print 'error',':',ex
