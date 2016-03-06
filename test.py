@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from gps import decodegps,isheart,lbs
+from gps import decodegps,isheart,lbs,getLBS
 from sql import find,pointadd,findlbs,lbsadd
 
 #测试用GPS上传字串
@@ -13,9 +13,18 @@ mGPS ='*MG200695501000034550,BA&A1811553636369511428655860000010316&X460,0,12573
 
 #mcc=460&mnc=0&lac=12573&ci=63441&output=json
 #r = findlbs(460,0,12573,63441)
-r = lbs(460,0,12573,63441)
+#r = lbs(460,0,12573,63441)
+#print r
+
+#lbsadd(460,0,12573,63441,r)
+
+r =  getLBS(mGPS)
 print r
 
-lbsadd(460,0,12573,63441,r)
+if findlbs(r) ==False:
+    r0 =lbs(r)
+    lbsadd(r,r0)
+#r0 =  lbs(r)
+#print r0
 
 

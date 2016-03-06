@@ -65,16 +65,16 @@ def baidugps(lon,lat):
 
 
 
-def lbs(mcc,mnc,lac,ci):
+def lbs(GPSDataJson):
     values = {}
     # LBS接口：http://api.cellocation.com/cell/?mcc=460&mnc=0&lac=12573&ci=63441&output=json
     try:
-
+        d=JSONDecoder().decode(GPSDataJson)
         values["output"] =  'json'
-        values["mcc"] = mcc
-        values["mnc"] = mnc
-        values["ci"] = ci
-        values["lac"] = lac
+        values["mcc"] = d["mcc"]
+        values["mnc"] = d["mnc"]
+        values["ci"] = d["ci"]
+        values["lac"] = d["lac"]
 
         data = urllib.urlencode(values)
 

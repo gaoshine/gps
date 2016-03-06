@@ -22,7 +22,10 @@ def tcplink(sock, addr):
             sock.send('*MG20,YAH#')
         if islogin(data):
             sock.send('*MG20,YAB#')
+        #解码GPS上传信息
         r = decodegps(data)
+        #解码LBS上传信息
+
         #写入数据库
         pointadd(r)
         #发送给API(写入车辆管理的定位数据)
@@ -114,10 +117,15 @@ def islogin(mGPS):
     return jsonStr
 
 def getLBS(mGPS):
-    pattern = re.compile('MG201(\d{15}),AB&X', re.IGNORECASE)
+    #mGPS = "*MG201695501000034550,AB&X460,0,12991,56417,85;12991,61522,63;12991,61521,70;12390,46707,74;12390,18807,75;12991,31585,76;12991,48010,80&B0000000000&G000580&M990&N13&O0000&Z00&T0003#"
+    pattern = re.compile('MG20[01](\d+),(.*)&X(\d+),(\d+),(\d+),(\d+)', re.IGNORECASE)
     items = re.findall(pattern, mGPS)
     if items :
-        jsonStr = True
+        #print items
+        for item in items:
+            #print item[0],item[1],item[2],item[3]
+            r ='{"errcode":0, "imei":"%s","mcc":"%s", "mnc":"%s", "lac":"%s", "ci":"%s"}' % (item[0],item[2],item[3],item[4],item[5])
+        jsonStr = r
     else:
         jsonStr = False
     # print jsonStr
