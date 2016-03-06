@@ -118,7 +118,7 @@ def islogin(mGPS):
 
 def getLBS(mGPS):
     #mGPS = "*MG201695501000034550,AB&X460,0,12991,56417,85;12991,61522,63;12991,61521,70;12390,46707,74;12390,18807,75;12991,31585,76;12991,48010,80&B0000000000&G000580&M990&N13&O0000&Z00&T0003#"
-    pattern = re.compile('MG20[01](\d+),(.*)&X(\d+),(\d+),(\d+),(\d+)', re.IGNORECASE)
+    pattern = re.compile('MG20[01](\d+),(.*)&[XP](\d+),(\d+),(\d+),(\d+)', re.IGNORECASE)
     items = re.findall(pattern, mGPS)
     if items :
         #print items
