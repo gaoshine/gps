@@ -84,10 +84,12 @@ def pointadd(GPSDataJson,LBS):
         values["IMEI"] = d["IMEI"]
         if LBS:
             values["battery"] = d["battery"]
+        else:
+            values["mdate"] =  str(d["date"] + ' ' +d["time"])
 
         values["lon"] =  d["lon"]
         values["lat"] =   d["lat"]
-        values["mdate"] =  str(d["date"] + ' ' +d["time"])
+
         #values["time"] = d["time"]
 
         #连接

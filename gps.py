@@ -133,7 +133,7 @@ def islogin(mGPS):
 
 def getLBS(mGPS):
     #mGPS = "*MG201695501000034550,AB&X460,0,12991,56417,85;12991,61522,63;12991,61521,70;12390,46707,74;12390,18807,75;12991,31585,76;12991,48010,80&B0000000000&G000580&M990&N13&O0000&Z00&T0003#"
-    pattern = re.compile('MG20[01](\d+),(.*)&[XP](\d+),(\d+),(\d+),(\d+)', re.IGNORECASE)
+    pattern = re.compile('MG20[01](\d+),(.*)&X(\d+),(\d+),(\d+),(\d+)', re.IGNORECASE)
     items = re.findall(pattern, mGPS)
     if items :
         #print items
@@ -142,7 +142,18 @@ def getLBS(mGPS):
             r ='{"errcode":0, "IMEI":"%s","mcc":"%s", "mnc":"%s", "lac":"%s", "ci":"%s"}' % (item[0],item[2],item[3],item[4],item[5])
         jsonStr = r
     else:
-        jsonStr = False
+        pattern = re.compile('MG20[01](\d+),(.*)&P(\d{4})(\d{4})(\w{4})(\w{4})', re.IGNORECASE)
+        items = re.findall(pattern, mGPS)
+        print "LBS P:"
+        if items :
+            #print items
+            for item in items:
+                #print item[0],item[1],item[2],item[3]
+                r ='{"errcode":0, "IMEI":"%s","mcc":"%s", "mnc":"%s", "lac":"%s", "ci":"%s"}' % (item[0],item[2],item[3],int(item[4],16),int(item[5],16))
+            jsonStr = r
+        else:
+            jsonStr = False
+
     # print jsonStr
     return jsonStr
 
