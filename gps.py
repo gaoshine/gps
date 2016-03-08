@@ -8,7 +8,7 @@ import string
 # 导入re模块
 import re
 from jsonpost import jsonpost, baidugps, lbs
-from sql import find,pointadd
+from sql import find,pointadd,findlbs,lbsadd
 
 
 def tcplink(sock, addr):
@@ -24,12 +24,27 @@ def tcplink(sock, addr):
             sock.send('*MG20,YAB#')
         #解码GPS上传信息
         r = decodegps(data)
-        #解码LBS上传信息
+        if r != False:
+            #写入数据库
+            pointadd(r,True)
+            #发送给API(写入车辆管理的定位数据)
+            jsonpost(r,True)
 
-        #写入数据库
-        pointadd(r)
-        #发送给API(写入车辆管理的定位数据)
-        jsonpost(r)
+        #解码LBS上传信息
+        r =  getLBS(data)
+        if r != False:
+            #判断
+            r2 = findlbs(r)
+            if r2  == False:
+                r0 =lbs(r)
+                lbsadd(r,r0)
+                r2 = r0
+            #写入数据库
+            pointadd(r2,False)
+            #发送给API(写入车辆管理的定位数据)
+            jsonpost(r2,False)
+
+
         mlog('gps', data)
         print 'Rev:%s' % data
         if data == 'exit' or not data:
@@ -74,7 +89,7 @@ def decodegps(mGPS):
         info['IMEI'] = item[0]
         break
     if (x + y) < 1:
-        return
+        return False
     d = baidugps(x, y)  #百度和gps坐标转换
     print d
     print d[0]['x'], d[0]['y']
@@ -124,7 +139,7 @@ def getLBS(mGPS):
         #print items
         for item in items:
             #print item[0],item[1],item[2],item[3]
-            r ='{"errcode":0, "imei":"%s","mcc":"%s", "mnc":"%s", "lac":"%s", "ci":"%s"}' % (item[0],item[2],item[3],item[4],item[5])
+            r ='{"errcode":0, "IMEI":"%s","mcc":"%s", "mnc":"%s", "lac":"%s", "ci":"%s"}' % (item[0],item[2],item[3],item[4],item[5])
         jsonStr = r
     else:
         jsonStr = False

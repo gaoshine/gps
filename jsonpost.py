@@ -7,7 +7,7 @@ import urllib2
 import json
 from json import *
 
-def jsonpost(GPSDataJson):
+def jsonpost(GPSDataJson,LBS):
     values = {}
     #values['APIkey'] = 'Kingstar_6161266'
     #d =  {"IMEI": "695501000029329", "battery": "99.0", "lon": "114.054145", "date": "2016-01-18", "time": "18:16:39", "lat": "22.615287"}
@@ -15,16 +15,23 @@ def jsonpost(GPSDataJson):
         d=JSONDecoder().decode(GPSDataJson)
         #values['GPSDataJson'] = '{"IMEI": "695501000029329", "battery": "99.0", "lon": "114.054145", "date": "2016-01-18", "time": "18:16:39", "lat": "22.615287"}'
         values["IMEI"] = d["IMEI"]
-        values["battery"] = d["battery"]
+        if LBS:
+            values["battery"] = d["battery"]
+            values["date"] =  d["date"]
+            values["time"] = d["time"]
+        else:
+            values["battery"] = -1
+            values["date"] = ""
+            values["time"] = ""
         values["lon"] =  d["lon"]
         values["lat"] =  d["lat"]
-        values["date"] =  d["date"]
-        values["time"] = d["time"]
+
+
 
         data = urllib.urlencode(values)
         #data = 'GPSDataJson={"IMEI": "695501000029329", "battery": "99.0", "lon": "114.054145", "date": "2016-01-18", "time": "18:16:39", "lat": "22.615287"}'
 
-        url = "http://page.kingstars.cn/index.php?m=Api&a=index"
+        url = "http://page.goodgas.cn/index.php?m=Api&a=index"
         geturl = url + "&"+data
         print geturl
         request = urllib2.Request(geturl)
@@ -75,6 +82,7 @@ def lbs(GPSDataJson):
         values["mnc"] = d["mnc"]
         values["ci"] = d["ci"]
         values["lac"] = d["lac"]
+        imei = d["IMEI"]
 
         data = urllib.urlencode(values)
 
@@ -86,10 +94,12 @@ def lbs(GPSDataJson):
         r =response.read()
         d=JSONDecoder().decode(r)
         print d['errcode'],d['address']
+        r0 = '{"errcode":%d,"IMEI":"%s" ,"lat":"%s", "lon":"%s", "address":"%s"}' %( d["errcode"],imei,d["lat"],d["lon"],d["address"])
+        print r0
         #return d["result"]
         #s = json.loads(r)
         #return s["result"]
-        return r
+        return r0
 
     except Exception,ex:
         print 'error',':',ex
