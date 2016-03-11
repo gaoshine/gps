@@ -8,7 +8,7 @@ import string
 # 导入re模块
 import re
 from jsonpost import jsonpost, baidugps, lbs
-from sql import find,pointadd,findlbs,lbsadd
+from sql import find, pointadd, findlbs, lbsadd
 
 
 def tcplink(sock, addr):
@@ -17,33 +17,32 @@ def tcplink(sock, addr):
     while True:
         data = sock.recv(1024)
         time.sleep(1)
-        #心跳和注册报文
+        # 心跳和注册报文
         if isheart(data):
             sock.send('*MG20,YAH#')
         if islogin(data):
             sock.send('*MG20,YAB#')
-        #解码GPS上传信息
+        # 解码GPS上传信息
         r = decodegps(data)
         if r != False:
-            #写入数据库
-            pointadd(r,True)
-            #发送给API(写入车辆管理的定位数据)
-            jsonpost(r,True)
+            # 写入数据库
+            pointadd(r, True)
+            # 发送给API(写入车辆管理的定位数据)
+            jsonpost(r, True)
 
-        #解码LBS上传信息
-        r =  getLBS(data)
+        # 解码LBS上传信息
+        r = getLBS(data)
         if r != False:
-            #判断
+            # 判断
             r2 = findlbs(r)
-            if r2  == False:
-                r0 =lbs(r)
-                lbsadd(r,r0)
+            if r2 == False:
+                r0 = lbs(r)
+                lbsadd(r, r0)
                 r2 = r0
-            #写入数据库
-            pointadd(r2,False)
-            #发送给API(写入车辆管理的定位数据)
-            jsonpost(r2,False)
-
+            # 写入数据库
+            pointadd(r2, False)
+            # 发送给API(写入车辆管理的定位数据)
+            jsonpost(r2, False)
 
         mlog('gps', data)
         print 'Rev:%s' % data
@@ -90,7 +89,7 @@ def decodegps(mGPS):
         break
     if (x + y) < 1:
         return False
-    d = baidugps(x, y)  #百度和gps坐标转换
+    d = baidugps(x, y)  # 百度和gps坐标转换
     print d
     print d[0]['x'], d[0]['y']
     info['lon'] = d[0]['x']
@@ -109,47 +108,52 @@ def decodegps(mGPS):
     # print jsonStr
     return jsonStr
 
-#u判断是否是心跳包
+
+# u判断是否是心跳包
 def isheart(mGPS):
     pattern = re.compile('MG201(\d{15}),AH&B', re.IGNORECASE)
     items = re.findall(pattern, mGPS)
-    if items :
+    if items:
         jsonStr = True
     else:
         jsonStr = False
     # print jsonStr
     return jsonStr
 
-#u判断是否是登陆包
+
+# u判断是否是登陆包
 def islogin(mGPS):
     pattern = re.compile('MG201(\d{15}),AB&A', re.IGNORECASE)
     items = re.findall(pattern, mGPS)
-    if items :
+    if items:
         jsonStr = True
     else:
         jsonStr = False
     # print jsonStr
     return jsonStr
 
+
 def getLBS(mGPS):
-    #mGPS = "*MG201695501000034550,AB&X460,0,12991,56417,85;12991,61522,63;12991,61521,70;12390,46707,74;12390,18807,75;12991,31585,76;12991,48010,80&B0000000000&G000580&M990&N13&O0000&Z00&T0003#"
+    # mGPS = "*MG201695501000034550,AB&X460,0,12991,56417,85;12991,61522,63;12991,61521,70;12390,46707,74;12390,18807,75;12991,31585,76;12991,48010,80&B0000000000&G000580&M990&N13&O0000&Z00&T0003#"
     pattern = re.compile('MG20[01](\d+),(.*)&X(\d+),(\d+),(\d+),(\d+)', re.IGNORECASE)
     items = re.findall(pattern, mGPS)
-    if items :
-        #print items
+    if items:
+        # print items
         for item in items:
-            #print item[0],item[1],item[2],item[3]
-            r ='{"errcode":0, "IMEI":"%s","mcc":"%s", "mnc":"%s", "lac":"%s", "ci":"%s"}' % (item[0],item[2],item[3],item[4],item[5])
+            # print item[0],item[1],item[2],item[3]
+            r = '{"errcode":0, "IMEI":"%s","mcc":"%s", "mnc":"%s", "lac":"%s", "ci":"%s"}' % (
+            item[0], item[2], item[3], item[4], item[5])
         jsonStr = r
     else:
         pattern = re.compile('MG20[01](\d+),(.*)&P(\d{4})(\d{4})(\w{4})(\w{4})', re.IGNORECASE)
         items = re.findall(pattern, mGPS)
         print "LBS P:"
-        if items :
-            #print items
+        if items:
+            # print items
             for item in items:
-                #print item[0],item[1],item[2],item[3]
-                r ='{"errcode":0, "IMEI":"%s","mcc":"%s", "mnc":"%s", "lac":"%s", "ci":"%s"}' % (item[0],item[2],item[3],int(item[4],16),int(item[5],16))
+                # print item[0],item[1],item[2],item[3]
+                r = '{"errcode":0, "IMEI":"%s","mcc":"%s", "mnc":"%s", "lac":"%s", "ci":"%s"}' % (
+                item[0], item[2], item[3], int(item[4], 16), int(item[5], 16))
             jsonStr = r
         else:
             jsonStr = False

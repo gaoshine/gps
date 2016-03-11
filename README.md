@@ -2,7 +2,7 @@
 采用通用的 T9 GPStracer GPS 跟踪器
 
 GPS服务器端代码
-> 通过设定T9 向 IOT.kingstars.cn发送定位数据,服务端通过sock TCP端口</br>
+> 通过设定T9 向 gps.kingstars.cn发送定位数据,服务端通过sock TCP端口(2332)</br>
 > 获取信息,解码处理后通过API发送数据到物联平台 </br>
 > 负责接收GPS设备上报的数据和下发命令指令</br>
 > 负责接收GPS上传信息并整理后在发送给指定的API</br>
@@ -70,8 +70,13 @@ GPS服务器端代码
 *MG20113800138000,GB0930,3#表示每天上午9点30分上传一次报文，17点30分和01点30分分别播报一次，共三次
 [*MG20][1]13800138000,GB0930,3#
 
- LBS接口：
+LBS接口：
 http://api.cellocation.com/cell/?mcc=460&mnc=0&lac=12573&ci=63441&output=json
+
+2016-3-8  许多函数增加了 LBS参数 True为GPS数据 False为LBS数据  
+2016-3-9  启用logging取代print,发现 pointadd函数中插入数据时候 battery没有值报错问题. 
+
+
 
 
 
