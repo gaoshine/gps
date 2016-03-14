@@ -8,7 +8,7 @@ import string
 # 导入re模块
 import re
 from jsonpost import jsonpost, baidugps, lbs
-from sql import find, pointadd, findlbs, lbsadd
+from sql import find, pointadd, findlbs, lbsadd,deviceadd
 
 
 def tcplink(sock, addr):
@@ -86,6 +86,8 @@ def decodegps(mGPS):
         info['time'] = mtime
         info['date'] = mdate
         info['IMEI'] = item[0]
+        info['velocity'] = item[5]
+        info['direction'] = item[6]
         break
     if (x + y) < 1:
         return False
@@ -96,7 +98,7 @@ def decodegps(mGPS):
     info['lat'] = d[0]['y']
 
     # print items
-
+    #读取电池电量
     pattern = re.compile('&M(\d{3})', re.S)
     items = re.findall(pattern, mGPS)
     for item in items:
@@ -104,8 +106,30 @@ def decodegps(mGPS):
         info['battery'] = item[0] + item[1] + '.' + item[2]
         break
 
+    #读取海拔
+    pattern = re.compile('&G(\d{6})', re.S)
+    items = re.findall(pattern, mGPS)
+    for item in items:
+        # print item[0]+item[1] +'.'+item[2]
+        info['altitude'] = item[0] + item[1] +item[2] + item[3] +item[4] + '.' + item[5]
+        break
+
+
+
+
+    #读取方向
+    pattern = re.compile('&M(\d{3})', re.S)
+    items = re.findall(pattern, mGPS)
+    for item in items:
+        # print item[0]+item[1] +'.'+item[2]
+        info['direction'] = item[0] + item[1] + '.' + item[2]
+        break
+
+
+
+
     jsonStr = json.dumps(info)
-    # print jsonStr
+    print jsonStr
     return jsonStr
 
 
@@ -126,6 +150,10 @@ def islogin(mGPS):
     pattern = re.compile('MG201(\d{15}),AB&A', re.IGNORECASE)
     items = re.findall(pattern, mGPS)
     if items:
+        for item in items:
+           imei = item
+           deviceadd(imei)
+
         jsonStr = True
     else:
         jsonStr = False

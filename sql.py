@@ -90,6 +90,8 @@ def pointadd(GPSDataJson, LBS):
         values["IMEI"] = d["IMEI"]
         if LBS:
             values["battery"] = d["battery"]
+            values["velocity"] = d["velocity"]
+            values["direction"] = d["direction"]
             # values["mdate"] =  str(d["date"] + ' ' +d["time"])
 
         else:
@@ -98,6 +100,8 @@ def pointadd(GPSDataJson, LBS):
 
         values["lon"] = d["lon"]
         values["lat"] = d["lat"]
+
+
 
         # values["time"] = d["time"]
 
@@ -109,8 +113,8 @@ def pointadd(GPSDataJson, LBS):
             sql = "insert into datapoint (lon,lat,battery,IMEI) values (%s,%s,%s,%s)" % (
             values["lon"], values["lat"], values["battery"], values["IMEI"])
         else:
-            sql = "insert into datapoint (lon,lat,battery,IMEI) values (%s,%s,%s,%s)" % (
-            values["lon"], values["lat"], values["battery"], values["IMEI"])
+            sql = "insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (%s,%s,%s,%s,%s,%s)" % (
+            values["lon"], values["lat"], values["battery"], values["IMEI"],values["velocity"],values["direction"])
 
         print sql
         n = cursor.execute(sql)
@@ -118,3 +122,24 @@ def pointadd(GPSDataJson, LBS):
 
     except Exception, e:
         print 'pointadd error in: ', e
+
+#判断新接入的设备(imei),如果数据库里没有就添加上
+def deviceadd(imei):
+    try:
+        # 连接
+        conn = MySQLdb.connect(host="localhost", user="root", passwd="kingstar", db="gis", charset="utf8")
+        cursor = conn.cursor()
+        # 查询
+        sql =  "select * from device where IMEI = '%s' " % imei
+        n = cursor.execute(sql)
+        row = cursor.fetchone()
+        if not row:
+            # 插入
+            sql = "insert into device (imei,isused) values (%s,%d)" % (imei,False)
+            n = cursor.execute(sql)
+        print "'deviceadd  ",sql
+        return  True
+    except Exception,e:
+        print 'deviceadd error in:', e
+        return False
+
