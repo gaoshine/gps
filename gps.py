@@ -118,12 +118,12 @@ def decodegps(mGPS):
 
 
     #读取方向
-    pattern = re.compile('&M(\d{3})', re.S)
-    items = re.findall(pattern, mGPS)
-    for item in items:
+   # pattern = re.compile('&M(\d{3})', re.S)
+   # items = re.findall(pattern, mGPS)
+   # for item in items:
         # print item[0]+item[1] +'.'+item[2]
-        info['direction'] = item[0] + item[1] + '.' + item[2]
-        break
+   #     info['direction'] = item[0] + item[1] + '.' + item[2]
+   #     break
 
 
 

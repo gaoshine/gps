@@ -1,0 +1,2731 @@
+/home/kingstar/gps/gps/sql.py:139: Warning: Field 'cardno' doesn't have a default value
+  n = cursor.execute(sql)
+/home/kingstar/gps/gps/sql.py:139: Warning: Field 'starttime' doesn't have a default value
+  n = cursor.execute(sql)
+Waiting for connection...
+Accept new connection from 117.136.47.224:47003...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=28674
+insert into datapoint (lon,lat,battery,IMEI) values (114.477455,36.606468,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606468&battery=-1&lon=114.477455&date=&time=&IMEI=695603000000936
+{"id":403,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d7002&B0000000000&W00&G001220&M990&N19&O0000&Z40&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.224:47003 closed.
+Accept new connection from 117.136.47.224:47004...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=28674
+insert into datapoint (lon,lat,battery,IMEI) values (114.477455,36.606468,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606468&battery=-1&lon=114.477455&date=&time=&IMEI=695603000000936
+{"id":404,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,28674,73;12573,28675,80;12573,28673,82;12573,62607,83;12573,63412,83;12573,14227,83&B0000000000&W00&G001220&M990&N19&O0000&Z40&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N19&Z40&T0004#
+Accept new connection from 121.24.253.80:49153...
+LBS P:
+Rev:aa
+
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=63411
+insert into datapoint (lon,lat,battery,IMEI) values (114.477966,36.606682,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606682&battery=-1&lon=114.477966&date=&time=&IMEI=695603000000936
+{"id":405,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,63411,76;12573,28674,73;12573,13121,76;12573,28673,82&B0000000000&W00&G001220&M990&N18&O0000&Z40&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N18&Z40&T0004#*MG201695603000000936,AB&P04600000311df7b3&B0000000000&W00&G001220&M990&N16&O0000&Z70&T0001#
+
+LBS P:
+Rev:
+
+LBS P:
+Rev:
+
+
+LBS P:
+Rev:
+LBS P:
+Rev:
+LBS P:
+Rev:
+Connection from 121.24.253.80:49153 closed.
+Accept new connection from 117.136.47.239:56723...
+IMEI:695603000000936 Time:082347 lat:36366358 lon:114287612 6 05 27 Date:150316
+[{u'y': 36.617177159352, u'x': 114.49171957805}]
+114.491719578 36.6171771594
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00046.0", "lon": 114.49171957805, "date": "2016-03-15", "time": "08:23:47", "lat": 36.617177159352, "velocity": "05"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.491719578,36.6171771594,99.0,695603000000936,05,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6171771594&battery=99.0&lon=114.491719578&date=2016-03-15&time=08%3A23%3A47&IMEI=695603000000936
+{"id":430,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0823473636635811428761260527150316&B0000000000&W00&G000460&M990&N23&O0802&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.239:56723 closed.
+Accept new connection from 117.136.47.239:56724...
+'deviceadd   insert into device (imei,isused) values (695603000000936,0)
+LBS P:
+Rev:*MG201695603000000936,AB&A0824303636566411428727760618150316&B0000000000&W00&G000590&M990&N20&O0805&Z44&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N31&Z44&T0005#
+Accept new connection from 117.136.47.197:4374...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=63411
+insert into datapoint (lon,lat,battery,IMEI) values (114.477966,36.606682,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606682&battery=-1&lon=114.477966&date=&time=&IMEI=695603000000936
+{"id":431,"status":"success"}
+Rev:*MG200695603000000936,BA&P04600000311df7b3&E160315082547&B0000000000&W00&G000530&M990&N31&O0701&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.197:4374 closed.
+Accept new connection from 117.136.47.197:4375...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0826433636424911428645760011150316&B0000000000&W00&G000810&M990&N31&O0903&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N31&Z74&T0005#
+Accept new connection from 117.136.47.200:26942...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=0 and ci=0
+insert into datapoint (lon,lat,battery,IMEI) values (,,-1,695603000000936)
+pointadd error in:  (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',-1,695603000000936)' at line 1")
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=&battery=-1&lon=&date=&time=&IMEI=695603000000936
+{"id":432,"status":"success"}
+Rev:*MG201695603000000936,AB&P0460000000000000&B0000000000&W00&G000830&M990&N00&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.200:26942 closed.
+Accept new connection from 117.136.47.200:26950...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=47020
+insert into datapoint (lon,lat,battery,IMEI) values (114.476509,36.604900,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604900&battery=-1&lon=114.476509&date=&time=&IMEI=695603000000936
+{"id":433,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,47020,73;12573,63411,71;12573,47022,75;12573,28674,77;12576,63426,79;12673,48640,82;12573,28675,87&B0000000000&W00&G000830&M990&N20&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N20&Z70&T0004#
+Accept new connection from 117.136.47.254:2080...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12673 and ci=48640
+http://api.cellocation.com/cell/?output=json&ci=48640&mnc=0000&mcc=0460&lac=12673
+0 error : 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&P046000003181be00&B0000000000&W00&G000830&M990&N16&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.254:2080 closed.
+Accept new connection from 117.136.47.254:2081...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=47020
+insert into datapoint (lon,lat,battery,IMEI) values (114.476509,36.604900,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604900&battery=-1&lon=114.476509&date=&time=&IMEI=695603000000936
+{"id":434,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,47020,72;12573,63411,68;12573,47022,76;12573,16940,78;12573,47021,78;12573,28674,81&B0000000000&W00&G000830&M990&N20&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N20&Z70&T0004#
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=47020
+insert into datapoint (lon,lat,battery,IMEI) values (114.476509,36.604900,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604900&battery=-1&lon=114.476509&date=&time=&IMEI=695603000000936
+{"id":435,"status":"success"}
+Rev:*MG200695603000000936,BA&X460,0,12573,47020,72;12573,63411,68;12573,47022,76;12573,16940,78;12573,47021,78;12573,28674,81&E160315083149&B0000000000&W00&G000520&M990&N19&O0401&T0005#
+Accept new connection from 117.136.47.242:37031...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=63411
+insert into datapoint (lon,lat,battery,IMEI) values (114.477966,36.606682,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606682&battery=-1&lon=114.477966&date=&time=&IMEI=695603000000936
+{"id":436,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311df7b3&B0000000000&W00&G200350&M990&N18&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+IMEI:695603000000936 Time:083315 lat:36363604 lon:114286422 6 00 00 Date:150316
+[{u'y': 36.612595868904, u'x': 114.48973755659}]
+114.489737557 36.6125958689
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00150.0", "lon": 114.48973755659, "date": "2016-03-15", "time": "08:33:15", "lat": 36.612595868904, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.489737557,36.6125958689,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6125958689&battery=99.0&lon=114.489737557&date=2016-03-15&time=08%3A33%3A15&IMEI=695603000000936
+{"id":437,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0833153636360411428642260000150316&B0000000000&W00&G001500&M990&N22&O0401&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.242:37031 closed.
+Accept new connection from 117.136.47.242:37032...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0833263636360711428643160021150316&B0000000000&W00&G001540&M990&N22&O0401&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N22&Z74&T0005#
+Accept new connection from 117.136.47.248:40490...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=63411
+insert into datapoint (lon,lat,battery,IMEI) values (114.477966,36.606682,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606682&battery=-1&lon=114.477966&date=&time=&IMEI=695603000000936
+{"id":438,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311df7b3&B0000000000&W00&G001380&M990&N19&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.248:40490 closed.
+Accept new connection from 117.136.47.248:40491...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=63411
+insert into datapoint (lon,lat,battery,IMEI) values (114.477966,36.606682,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606682&battery=-1&lon=114.477966&date=&time=&IMEI=695603000000936
+{"id":439,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,63411,70;12573,47020,72;12573,63412,73;12573,47022,75;12573,13121,77;12573,16940,78;12673,48640,79&B0000000000&W00&G001380&M990&N22&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N22&Z70&T0004#
+Accept new connection from 117.136.47.232:26139...
+IMEI:695603000000936 Time:083635 lat:36363940 lon:114286565 6 01 34 Date:150316
+[{u'y': 36.613151090234, u'x': 114.48997703973}]
+114.48997704 36.6131510902
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00276.0", "lon": 114.48997703973, "date": "2016-03-15", "time": "08:36:35", "lat": 36.613151090234, "velocity": "01"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.48997704,36.6131510902,99.0,695603000000936,01,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6131510902&battery=99.0&lon=114.48997704&date=2016-03-15&time=08%3A36%3A35&IMEI=695603000000936
+{"id":440,"status":"success"}
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=63411
+insert into datapoint (lon,lat,battery,IMEI) values (114.477966,36.606682,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606682&battery=-1&lon=114.477966&date=&time=&IMEI=695603000000936
+{"id":441,"status":"success"}
+Rev:*MG200695603000000936,BA&A0836353636394011428656560134150316&B0000000000&W00&G002760&M990&N21&O0401&T0005#*MG201695603000000936,AB&P04600000311df7b3&B0000000000&W00&G001060&M990&N18&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.232:26139 closed.
+Accept new connection from 117.136.47.232:26140...
+IMEI:695603000000936 Time:083801 lat:36363556 lon:114286525 6 02 05 Date:150316
+[{u'y': 36.612513917303, u'x': 114.48990828209}]
+114.489908282 36.6125139173
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00063.0", "lon": 114.48990828209, "date": "2016-03-15", "time": "08:38:01", "lat": 36.612513917303, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.489908282,36.6125139173,99.0,695603000000936,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6125139173&battery=99.0&lon=114.489908282&date=2016-03-15&time=08%3A38%3A01&IMEI=695603000000936
+{"id":442,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0838013636355611428652560205150316&B0000000000&W00&G000630&M990&N22&O0400&T0005#*MG201695603000000936,AH&B0000000000&W00&M990&N22&Z74&T0006#
+Accept new connection from 117.136.47.252:32400...
+IMEI:695603000000936 Time:083927 lat:36363437 lon:114286211 6 03 33 Date:150316
+[{u'y': 36.612316053766, u'x': 114.48938892541}]
+114.489388925 36.6123160538
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00180.0", "lon": 114.48938892541, "date": "2016-03-15", "time": "08:39:27", "lat": 36.612316053766, "velocity": "03"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.489388925,36.6123160538,99.0,695603000000936,03,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6123160538&battery=99.0&lon=114.489388925&date=2016-03-15&time=08%3A39%3A27&IMEI=695603000000936
+{"id":443,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0839273636343711428621160333150316&B0000000000&W00&G001800&M990&N22&O0501&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.252:32400 closed.
+Accept new connection from 117.136.47.252:32401...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0840083636344211428622760033150316&B0000000000&W00&G001800&M990&N21&O0701&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N21&Z74&T0005#
+Accept new connection from 117.136.47.222:57635...
+IMEI:695603000000936 Time:084137 lat:36363427 lon:114286905 6 01 35 Date:150316
+[{u'y': 36.612294293744, u'x': 114.49054411225}]
+114.490544112 36.6122942937
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "20015.0", "lon": 114.49054411225, "date": "2016-03-15", "time": "08:41:37", "lat": 36.612294293744, "velocity": "01"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.490544112,36.6122942937,99.0,695603000000936,01,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6122942937&battery=99.0&lon=114.490544112&date=2016-03-15&time=08%3A41%3A37&IMEI=695603000000936
+{"id":444,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0841373636342711428690560135150316&B0000000000&W00&G200150&M990&N19&O0501&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.222:57635 closed.
+Accept new connection from 117.136.47.222:57636...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=63411
+insert into datapoint (lon,lat,battery,IMEI) values (114.477966,36.606682,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606682&battery=-1&lon=114.477966&date=&time=&IMEI=695603000000936
+{"id":445,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,63411,68;12573,47020,72;12573,47022,75;12573,13121,78;12673,48640,78;12573,16940,78&B0000000000&W00&G001680&M990&N22&O0601&Z70&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N22&Z70&T0005#
+Accept new connection from 117.136.47.235:54692...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=63411
+insert into datapoint (lon,lat,battery,IMEI) values (114.477966,36.606682,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606682&battery=-1&lon=114.477966&date=&time=&IMEI=695603000000936
+{"id":446,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311df7b3&B0000000000&W00&G000800&M990&N18&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+IMEI:695603000000936 Time:084415 lat:36363950 lon:114285872 6 00 00 Date:150316
+[{u'y': 36.613175493037, u'x': 114.4888247644}]
+114.488824764 36.613175493
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00211.0", "lon": 114.4888247644, "date": "2016-03-15", "time": "08:44:15", "lat": 36.613175493037, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.488824764,36.613175493,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.613175493&battery=99.0&lon=114.488824764&date=2016-03-15&time=08%3A44%3A15&IMEI=695603000000936
+{"id":447,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0844153636395011428587260000150316&B0000000000&W00&G002110&M990&N22&O0501&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.235:54692 closed.
+Accept new connection from 117.136.47.235:54693...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=63411
+insert into datapoint (lon,lat,battery,IMEI) values (114.477966,36.606682,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606682&battery=-1&lon=114.477966&date=&time=&IMEI=695603000000936
+{"id":448,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,63411,68;12573,63412,72;12573,47022,75;12573,13121,77;12673,48640,78;12573,16940,80&B0000000000&W00&G000600&M990&N22&O0601&Z70&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N19&Z74&T0005#
+Accept new connection from 117.136.47.212:48475...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=47020
+insert into datapoint (lon,lat,battery,IMEI) values (114.476509,36.604900,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604900&battery=-1&lon=114.476509&date=&time=&IMEI=695603000000936
+{"id":449,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311db7ac&B0000000000&W00&G001600&M990&N23&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.212:48475 closed.
+Accept new connection from 117.136.47.212:48476...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=47020
+insert into datapoint (lon,lat,battery,IMEI) values (114.476509,36.604900,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604900&battery=-1&lon=114.476509&date=&time=&IMEI=695603000000936
+{"id":450,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,47020,84;12573,16940,76;12673,18560,80;12573,16942,82;12573,28675,82;12573,63411,83;12573,16941,83&B0000000000&W00&G001600&M990&N13&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N15&Z70&T0004#
+Accept new connection from 117.136.47.239:30396...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=28674
+insert into datapoint (lon,lat,battery,IMEI) values (114.477455,36.606468,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606468&battery=-1&lon=114.477455&date=&time=&IMEI=695603000000936
+{"id":451,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d7002&B0000000000&W00&G001600&M990&N17&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=28674
+insert into datapoint (lon,lat,battery,IMEI) values (114.477455,36.606468,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606468&battery=-1&lon=114.477455&date=&time=&IMEI=695603000000936
+{"id":452,"status":"success"}
+Rev:*MG200695603000000936,BA&P04600000311d7002&E160315084843&B0000000000&W00&G000820&M990&N31&O1002&T0004#
+LBS P:
+Rev:
+Connection from 117.136.47.239:30396 closed.
+Accept new connection from 117.136.47.239:30397...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0849053636406811428666360018150316&B0000000000&W00&G000550&M990&N31&O1006&Z74&T0005#*MG201695603000000936,AH&B0000000000&W00&M990&N31&Z74&T0006#
+Accept new connection from 117.136.47.250:46727...
+IMEI:695603000000936 Time:085019 lat:36364337 lon:114287018 6 00 34 Date:150316
+[{u'y': 36.613810653335, u'x': 114.49073538363}]
+114.490735384 36.6138106533
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00118.0", "lon": 114.49073538363, "date": "2016-03-15", "time": "08:50:19", "lat": 36.613810653335, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.490735384,36.6138106533,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6138106533&battery=99.0&lon=114.490735384&date=2016-03-15&time=08%3A50%3A19&IMEI=695603000000936
+{"id":453,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0850193636433711428701860034150316&B0000000000&W00&G001180&M990&N31&O1106&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.250:46727 closed.
+Accept new connection from 117.136.47.250:46728...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0851193636490611428717160100150316&B0000000000&W00&G001010&M990&N28&O1409&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N28&Z74&T0005#
+Accept new connection from 117.136.47.208:10566...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+IMEI:695603000000936 Time:085232 lat:36365589 lon:114287431 6 01 35 Date:150316
+[{u'y': 36.615895414174, u'x': 114.49142017147}]
+114.491420171 36.6158954142
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00046.0", "lon": 114.49142017147, "date": "2016-03-15", "time": "08:52:32", "lat": 36.615895414174, "velocity": "01"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.491420171,36.6158954142,99.0,695603000000936,01,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6158954142&battery=99.0&lon=114.491420171&date=2016-03-15&time=08%3A52%3A32&IMEI=695603000000936
+{"id":454,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0852323636558911428743160135150316&B0000000000&W00&G000460&M990&N31&O0907&T0001#*MG201695603000000936,AB&A0852323636559711428743660101150316&B0000000000&W00&G000450&M990&N31&O0907&Z74&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.208:10566 closed.
+Accept new connection from 117.136.47.208:10568...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0853333636599911428737660134150316&B0000000000&W00&G000630&M990&N25&O1511&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z74&T0005#
+Accept new connection from 117.136.47.215:59633...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+IMEI:695603000000936 Time:085447 lat:36366128 lon:114288151 6 01 08 Date:150316
+[{u'y': 36.61678732244, u'x': 114.49262004189}]
+114.492620042 36.6167873224
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00065.0", "lon": 114.49262004189, "date": "2016-03-15", "time": "08:54:47", "lat": 36.61678732244, "velocity": "01"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.492620042,36.6167873224,99.0,695603000000936,01,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6167873224&battery=99.0&lon=114.492620042&date=2016-03-15&time=08%3A54%3A47&IMEI=695603000000936
+{"id":455,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0854473636612811428815160108150316&B0000000000&W00&G000650&M990&N18&O1208&T0001#*MG201695603000000936,AB&A0854473636612811428815160108150316&B0000000000&W00&G000650&M990&N18&O1208&Z74&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.215:59633 closed.
+Accept new connection from 117.136.47.215:59634...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0855473636614911428834260008150316&B0000000000&W00&G000630&M990&N22&O1409&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N21&Z74&T0005#
+Accept new connection from 117.136.47.246:12056...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+IMEI:695603000000936 Time:085701 lat:36366119 lon:114288346 6 00 22 Date:150316
+[{u'y': 36.616763460593, u'x': 114.49294044996}]
+114.49294045 36.6167634606
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00056.0", "lon": 114.49294044996, "date": "2016-03-15", "time": "08:57:01", "lat": 36.616763460593, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.49294045,36.6167634606,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6167634606&battery=99.0&lon=114.49294045&date=2016-03-15&time=08%3A57%3A01&IMEI=695603000000936
+{"id":456,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0857013636611911428834660022150316&B0000000000&W00&G000560&M990&N23&O1306&T0001#*MG201695603000000936,AB&A0857013636609911428834760022150316&B0000000000&W00&G000570&M990&N23&O1406&Z74&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.246:12056 closed.
+Accept new connection from 117.136.47.246:12057...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0858013636612611428843360022150316&B0000000000&W00&G000560&M990&N24&O1408&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N24&Z74&T0005#
+Accept new connection from 117.136.47.242:35578...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+IMEI:695603000000936 Time:085915 lat:36366150 lon:114288437 6 00 00 Date:150316
+[{u'y': 36.616814360469, u'x': 114.4930927}]
+114.4930927 36.6168143605
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00056.0", "lon": 114.4930927, "date": "2016-03-15", "time": "08:59:15", "lat": 36.616814360469, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.4930927,36.6168143605,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6168143605&battery=99.0&lon=114.4930927&date=2016-03-15&time=08%3A59%3A15&IMEI=695603000000936
+{"id":457,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0859153636615011428843760000150316&B0000000000&W00&G000560&M990&N18&O1207&T0001#*MG201695603000000936,AB&A0859153636613111428845760000150316&B0000000000&W00&G000680&M990&N18&O1207&Z74&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.242:35578 closed.
+Accept new connection from 117.136.47.242:35580...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0900163636606411428891460709150316&B0000000000&W00&G000480&M990&N21&O1307&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N21&Z74&T0005#
+Accept new connection from 117.136.47.231:3098...
+IMEI:695603000000936 Time:090134 lat:36366094 lon:114290980 6 02 10 Date:150316
+[{u'y': 36.616675410631, u'x': 114.49732538607}]
+114.497325386 36.6166754106
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00022.0", "lon": 114.49732538607, "date": "2016-03-15", "time": "09:01:34", "lat": 36.616675410631, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.497325386,36.6166754106,99.0,695603000000936,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6166754106&battery=99.0&lon=114.497325386&date=2016-03-15&time=09%3A01%3A34&IMEI=695603000000936
+{"id":458,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0901343636609411429098060210150316&B0000000000&W00&G000220&M990&N17&O1206&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.231:3098 closed.
+Accept new connection from 117.136.47.231:3100...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0902303636604611429161660210150316&B0000000000&W00&G000480&M990&N17&O1106&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N17&Z74&T0005#
+Accept new connection from 117.136.47.254:18738...
+IMEI:695603000000936 Time:090346 lat:36366246 lon:114291906 6 01 32 Date:150316
+[{u'y': 36.616913589747, u'x': 114.49886195788}]
+114.498861958 36.6169135897
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "20033.0", "lon": 114.49886195788, "date": "2016-03-15", "time": "09:03:46", "lat": 36.616913589747, "velocity": "01"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.498861958,36.6169135897,99.0,695603000000936,01,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6169135897&battery=99.0&lon=114.498861958&date=2016-03-15&time=09%3A03%3A46&IMEI=695603000000936
+{"id":459,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0903463636624611429190660132150316&B0000000000&W00&G200330&M990&N15&O0906&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.254:18738 closed.
+Accept new connection from 117.136.47.254:18739...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0904443636612511429245060509150316&B0000000000&W00&G000470&M990&N25&O1106&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z74&T0005#
+Accept new connection from 117.136.47.209:24718...
+IMEI:695603000000936 Time:090600 lat:36368463 lon:114292786 6 08 35 Date:150316
+[{u'y': 36.62058452302, u'x': 114.50033833488}]
+114.500338335 36.620584523
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00051.0", "lon": 114.50033833488, "date": "2016-03-15", "time": "09:06:00", "lat": 36.62058452302, "velocity": "08"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.500338335,36.620584523,99.0,695603000000936,08,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.620584523&battery=99.0&lon=114.500338335&date=2016-03-15&time=09%3A06%3A00&IMEI=695603000000936
+{"id":460,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0906003636846311429278660835150316&B0000000000&W00&G000510&M990&N17&O1406&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.209:24718 closed.
+Accept new connection from 117.136.47.209:24719...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0906573637000711429293260000150316&B0000000000&W00&G000500&M990&N23&O1306&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N17&Z74&T0005#
+Accept new connection from 117.136.47.251:50408...
+IMEI:695603000000936 Time:090815 lat:36372118 lon:114293240 6 06 00 Date:150316
+[{u'y': 36.626675893842, u'x': 114.50110265454}]
+114.501102655 36.6266758938
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00045.0", "lon": 114.50110265454, "date": "2016-03-15", "time": "09:08:15", "lat": 36.626675893842, "velocity": "06"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.501102655,36.6266758938,99.0,695603000000936,06,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6266758938&battery=99.0&lon=114.501102655&date=2016-03-15&time=09%3A08%3A15&IMEI=695603000000936
+{"id":461,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0908153637211811429324060600150316&B0000000000&W00&G000450&M990&N31&O1206&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.251:50408 closed.
+Accept new connection from 117.136.47.251:50409...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0909113637323411429300860000150316&B0000000000&W00&G000660&M990&N20&O1306&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N24&Z74&T0005#
+Accept new connection from 117.136.47.233:24205...
+IMEI:695603000000936 Time:091030 lat:36374766 lon:114293300 6 00 00 Date:150316
+[{u'y': 36.631088991547, u'x': 114.50120234557}]
+114.501202346 36.6310889915
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00078.0", "lon": 114.50120234557, "date": "2016-03-15", "time": "09:10:30", "lat": 36.631088991547, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.501202346,36.6310889915,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6310889915&battery=99.0&lon=114.501202346&date=2016-03-15&time=09%3A10%3A30&IMEI=695603000000936
+{"id":462,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0910303637476611429330060000150316&B0000000000&W00&G000780&M990&N16&O1206&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.233:24205 closed.
+Accept new connection from 117.136.47.233:24207...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0911253637700311429358860600150316&B0000000000&W00&G000660&M990&N15&O1406&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N15&Z74&T0005#
+Accept new connection from 117.136.47.233:14530...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12665 and ci=63620
+http://api.cellocation.com/cell/?output=json&ci=63620&mnc=0000&mcc=0460&lac=12665
+0 error : 'ascii' codec can't encode characters in position 0-17: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG200695603000000936,BA&P046000003179f884&E160315091243&B0000000000&W00&G001210&M990&N27&O1200&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.233:14530 closed.
+Accept new connection from 117.136.47.233:14531...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0913393638148411429410160600150316&B0000000000&W00&G000520&M990&N24&O1406&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N24&Z74&T0005#
+Accept new connection from 117.136.47.242:62116...
+IMEI:695603000000936 Time:091458 lat:36384926 lon:114294390 6 00 00 Date:150316
+[{u'y': 36.64800225462, u'x': 114.50301537026}]
+114.50301537 36.6480022546
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00065.0", "lon": 114.50301537026, "date": "2016-03-15", "time": "09:14:58", "lat": 36.64800225462, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.50301537,36.6480022546,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6480022546&battery=99.0&lon=114.50301537&date=2016-03-15&time=09%3A14%3A58&IMEI=695603000000936
+{"id":463,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0914583638492611429439060000150316&B0000000000&W00&G000650&M990&N26&O1406&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.242:62116 closed.
+Accept new connection from 117.136.47.242:62118...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0915543638635011429453360700150316&B0000000000&W00&G000400&M990&N15&O1406&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N15&Z74&T0005#
+Accept new connection from 117.136.47.222:2646...
+IMEI:695603000000936 Time:091710 lat:36389836 lon:114294859 6 08 35 Date:150316
+[{u'y': 36.656177451256, u'x': 114.50378865845}]
+114.503788658 36.6561774513
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00048.0", "lon": 114.50378865845, "date": "2016-03-15", "time": "09:17:10", "lat": 36.656177451256, "velocity": "08"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.503788658,36.6561774513,99.0,695603000000936,08,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6561774513&battery=99.0&lon=114.503788658&date=2016-03-15&time=09%3A17%3A10&IMEI=695603000000936
+{"id":464,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0917103638983611429485960835150316&B0000000000&W00&G000480&M990&N13&O1206&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.222:2646 closed.
+Accept new connection from 117.136.47.222:2647...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0918063639251111429512461100150316&B0000000000&W00&G000750&M990&N29&O1406&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N18&Z74&T0005#
+Accept new connection from 117.136.47.208:41823...
+IMEI:695603000000936 Time:091924 lat:36398907 lon:114294202 6 16 34 Date:150316
+[{u'y': 36.671316650698, u'x': 114.5026858062}]
+114.502685806 36.6713166507
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00043.0", "lon": 114.5026858062, "date": "2016-03-15", "time": "09:19:24", "lat": 36.671316650698, "velocity": "16"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.502685806,36.6713166507,99.0,695603000000936,16,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6713166507&battery=99.0&lon=114.502685806&date=2016-03-15&time=09%3A19%3A24&IMEI=695603000000936
+{"id":465,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0919243639890711429420261634150316&B0000000000&W00&G000430&M990&N20&O0806&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.208:41823 closed.
+Accept new connection from 117.136.47.208:41824...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0920233640407011429300661400150316&B0000000000&W00&G000440&M990&N00&O1506&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N00&Z74&T0005#
+Accept new connection from 117.136.47.223:48249...
+IMEI:695603000000936 Time:092138 lat:36409555 lon:114297435 6 08 05 Date:150316
+[{u'y': 36.688969218138, u'x': 114.50806071795}]
+114.508060718 36.6889692181
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00032.0", "lon": 114.50806071795, "date": "2016-03-15", "time": "09:21:38", "lat": 36.688969218138, "velocity": "08"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.508060718,36.6889692181,99.0,695603000000936,08,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6889692181&battery=99.0&lon=114.508060718&date=2016-03-15&time=09%3A21%3A38&IMEI=695603000000936
+{"id":466,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0921383640955511429743560805150316&B0000000000&W00&G000320&M990&N12&O1206&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.223:48249 closed.
+Accept new connection from 117.136.47.223:48250...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0922363641308511430101261002150316&B0000000000&W00&G000260&M990&N19&O1506&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N19&Z74&T0005#
+Accept new connection from 117.136.47.205:50680...
+IMEI:695603000000936 Time:092353 lat:36417827 lon:114301572 6 15 00 Date:150316
+[{u'y': 36.702627479035, u'x': 114.51496815179}]
+114.514968152 36.702627479
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00057.0", "lon": 114.51496815179, "date": "2016-03-15", "time": "09:23:53", "lat": 36.702627479035, "velocity": "15"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.514968152,36.702627479,99.0,695603000000936,15,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.702627479&battery=99.0&lon=114.514968152&date=2016-03-15&time=09%3A23%3A53&IMEI=695603000000936
+{"id":467,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0923533641782711430157261500150316&B0000000000&W00&G000570&M990&N25&O1407&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.205:50680 closed.
+Accept new connection from 117.136.47.205:50681...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0924503642272611430205961500150316&B0000000000&W00&G000440&M990&N18&O1508&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N21&Z74&T0005#
+Accept new connection from 117.136.47.194:32142...
+IMEI:695603000000936 Time:092606 lat:36427595 lon:114302371 6 10 00 Date:150316
+[{u'y': 36.718895660625, u'x': 114.51631491779}]
+114.516314918 36.7188956606
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00051.0", "lon": 114.51631491779, "date": "2016-03-15", "time": "09:26:06", "lat": 36.718895660625, "velocity": "10"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.516314918,36.7188956606,99.0,695603000000936,10,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7188956606&battery=99.0&lon=114.516314918&date=2016-03-15&time=09%3A26%3A06&IMEI=695603000000936
+{"id":468,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0926063642759511430237161000150316&B0000000000&W00&G000510&M990&N22&O1506&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.194:32142 closed.
+Accept new connection from 117.136.47.194:32143...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0927053643189711430310761200150316&B0000000000&W00&G000440&M990&N20&O1508&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N20&Z74&T0005#
+Accept new connection from 117.136.47.200:18223...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=0 and ci=0
+insert into datapoint (lon,lat,battery,IMEI) values (,,-1,695603000000936)
+pointadd error in:  (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',-1,695603000000936)' at line 1")
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=&battery=-1&lon=&date=&time=&IMEI=695603000000936
+{"id":469,"status":"success"}
+Rev:*MG200695603000000936,BA&P0460000000000000&E160315092819&B0000000000&W00&G000680&M990&N00&O0806&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.200:18223 closed.
+Accept new connection from 117.136.47.200:18224...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0929183643246411430246160025150316&B0000000000&W00&G000460&M990&N17&O1007&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N14&Z74&T0005#
+Accept new connection from 117.136.47.232:26145...
+IMEI:695603000000936 Time:093033 lat:36431956 lon:114302345 6 01 22 Date:150316
+[{u'y': 36.726170698393, u'x': 114.51628681171}]
+114.516286812 36.7261706984
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00065.0", "lon": 114.51628681171, "date": "2016-03-15", "time": "09:30:33", "lat": 36.726170698393, "velocity": "01"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.516286812,36.7261706984,99.0,695603000000936,01,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7261706984&battery=99.0&lon=114.516286812&date=2016-03-15&time=09%3A30%3A33&IMEI=695603000000936
+{"id":470,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0930333643195611430234560122150316&B0000000000&W00&G000650&M990&N20&O1508&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.232:26145 closed.
+Accept new connection from 117.136.47.232:26146...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0931323643188911430228460023150316&B0000000000&W00&G000590&M990&N20&O1609&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N12&Z74&T0005#
+Accept new connection from 117.136.47.212:64807...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+IMEI:695603000000936 Time:093245 lat:36431996 lon:114302297 6 00 06 Date:150316
+[{u'y': 36.726241454928, u'x': 114.51619957448}]
+114.516199574 36.7262414549
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00091.0", "lon": 114.51619957448, "date": "2016-03-15", "time": "09:32:45", "lat": 36.726241454928, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.516199574,36.7262414549,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7262414549&battery=99.0&lon=114.516199574&date=2016-03-15&time=09%3A32%3A45&IMEI=695603000000936
+{"id":471,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0932453643199611430229760006150316&B0000000000&W00&G000910&M990&N21&O1209&T0001#*MG201695603000000936,AB&A0932463643199311430229560006150316&B0000000000&W00&G000900&M990&N21&O1409&Z74&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.212:64807 closed.
+Accept new connection from 117.136.47.212:64808...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0933463643223011430239160001150316&B0000000000&W00&G000420&M990&N17&O1809&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N16&Z74&T0005#
+Accept new connection from 117.136.47.206:61125...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+'deviceadd   select * from device where IMEI = '695603000000936' 
+IMEI:695603000000936 Time:093459 lat:36432461 lon:114302521 6 00 22 Date:150316
+[{u'y': 36.727003496991, u'x': 114.51657521151}]
+114.516575212 36.727003497
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "20002.0", "lon": 114.51657521151, "date": "2016-03-15", "time": "09:34:59", "lat": 36.727003496991, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.516575212,36.727003497,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.727003497&battery=99.0&lon=114.516575212&date=2016-03-15&time=09%3A34%3A59&IMEI=695603000000936
+{"id":472,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0934593643246111430252160022150316&B0000000000&W00&G200020&M990&N16&O1410&T0001#*MG201695603000000936,AB&A0935013643245511430253260022150316&B0000000000&W00&G200010&M990&N16&O1710&Z74&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#*MG201695603000000936,AB&A0936013643209011430236560022150316&B0000000000&W00&G000660&M990&N19&O2011&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N18&Z74&T0005#
+Accept new connection from 117.136.47.195:11253...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+IMEI:695603000000936 Time:093713 lat:36431955 lon:114302302 6 00 00 Date:150316
+[{u'y': 36.726171966908, u'x': 114.51621587542}]
+114.516215875 36.7261719669
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00064.0", "lon": 114.51621587542, "date": "2016-03-15", "time": "09:37:13", "lat": 36.726171966908, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.516215875,36.7261719669,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7261719669&battery=99.0&lon=114.516215875&date=2016-03-15&time=09%3A37%3A13&IMEI=695603000000936
+{"id":473,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0937133643195511430230260000150316&B0000000000&W00&G000640&M990&N19&O1410&T0001#*MG201695603000000936,AB&A0937153643193311430229360000150316&B0000000000&W00&G000630&M990&N19&O1710&Z74&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.195:11253 closed.
+Accept new connection from 117.136.47.195:11254...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A0938143643194311430228960000150316&B0000000000&W00&G000690&M990&N16&O1910&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N16&Z74&T0005#
+Accept new connection from 117.136.47.206:62084...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+IMEI:695603000000936 Time:093927 lat:36431946 lon:114302406 6 00 00 Date:150316
+[{u'y': 36.726146754297, u'x': 114.51638146223}]
+114.516381462 36.7261467543
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00021.0", "lon": 114.51638146223, "date": "2016-03-15", "time": "09:39:27", "lat": 36.726146754297, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.516381462,36.7261467543,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7261467543&battery=99.0&lon=114.516381462&date=2016-03-15&time=09%3A39%3A27&IMEI=695603000000936
+{"id":474,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A0939273643194611430240660000150316&B0000000000&W00&G000210&M990&N18&O1310&T0001#*MG201695603000000936,AB&A0939293643193711430238560000150316&B0000000000&W00&G000290&M990&N18&O1310&Z74&T0002#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.206:62084 closed.
+Accept new connection from 117.136.47.216:63392...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=61522
+http://api.cellocation.com/cell/?output=json&ci=61522&mnc=0000&mcc=0460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&P0460000032bff052&B0000000000&W00&G000550&M990&N20&O0000&Z40&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.216:63392 closed.
+Accept new connection from 117.136.47.216:63393...
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=61522
+http://api.cellocation.com/cell/?output=json&ci=61522&mnc=0&mcc=460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&X460,0,12991,61522,67;12991,61521,77;12390,46707,79;12991,56417,81;12991,48010,85&B0000000000&W00&G000550&M990&N23&O0000&Z40&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N23&Z40&T0004#
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=61522
+http://api.cellocation.com/cell/?output=json&ci=61522&mnc=0&mcc=460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG200695603000000936,BA&X460,0,12991,61522,67;12991,61521,77;12390,46707,79;12991,56417,81;12991,48010,85&E160315100336&B0000000000&W00&G200630&M990&N22&O0404&T0005#
+Accept new connection from 117.136.47.222:41487...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=18200
+http://api.cellocation.com/cell/?output=json&ci=18200&mnc=0000&mcc=0460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-13: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&P0460000032bf4718&B0000000000&W00&G200630&M990&N06&O0000&Z40&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+IMEI:695603000000936 Time:103414 lat:36431888 lon:114302251 6 06 15 Date:150316
+[{u'y': 36.726059055654, u'x': 114.51612627245}]
+114.516126272 36.7260590557
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "20044.0", "lon": 114.51612627245, "date": "2016-03-15", "time": "10:34:14", "lat": 36.726059055654, "velocity": "06"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.516126272,36.7260590557,99.0,695603000000936,06,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7260590557&battery=99.0&lon=114.516126272&date=2016-03-15&time=10%3A34%3A14&IMEI=695603000000936
+{"id":475,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A1034143643188811430225160615150316&B0000000000&W00&G200440&M990&N09&O0400&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.222:41487 closed.
+Accept new connection from 117.136.47.222:41488...
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=57095
+http://api.cellocation.com/cell/?output=json&ci=57095&mnc=0&mcc=460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-17: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&X460,0,12991,57095,96;12991,56417,100;12991,57097,101;12991,57202,103;12991,48010,106&B0000000000&W00&G200440&M990&N07&O0400&Z40&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N09&Z40&T0005#
+Accept new connection from 117.136.47.195:30137...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=0 and ci=0
+http://api.cellocation.com/cell/?output=json&ci=0&mnc=0000&mcc=0460&lac=0
+10001 
+{"errcode":10001,"IMEI":"695603000000936" ,"lat":"", "lon":"", "address":""}
+insert into lbs  (lon,lat,mmc,mnc,lac,ci,adress) values ('','',460,0,0,0,'') 
+insert into datapoint (lon,lat,battery,IMEI) values (,,-1,695603000000936)
+pointadd error in:  (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ',-1,695603000000936)' at line 1")
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=&battery=-1&lon=&date=&time=&IMEI=695603000000936
+{"id":476,"status":"success"}
+Rev:*MG201695603000000936,AB&P0460000000000000&B0000000000&W00&G000770&M990&N00&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=56417
+http://api.cellocation.com/cell/?output=json&ci=56417&mnc=0000&mcc=0460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG200695603000000936,BA&P0460000032bfdc61&E160315103620&B0000000000&W00&G200060&M990&N06&O0500&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.195:30137 closed.
+Accept new connection from 117.136.47.195:30138...
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=57095
+http://api.cellocation.com/cell/?output=json&ci=57095&mnc=0&mcc=460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-17: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&X460,0,12991,57095,100;12991,56417,101;12991,57201,103;12991,48010,103;12991,57202,107&B0000000000&W00&G200060&M990&N08&O0500&Z70&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N08&Z70&T0005#
+Accept new connection from 117.136.47.202:62100...
+IMEI:695603000000936 Time:103815 lat:36431875 lon:114301854 6 00 00 Date:150316
+[{u'y': 36.726051124102, u'x': 114.51546163666}]
+114.515461637 36.7260511241
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "20031.0", "lon": 114.51546163666, "date": "2016-03-15", "time": "10:38:15", "lat": 36.726051124102, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.515461637,36.7260511241,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7260511241&battery=99.0&lon=114.515461637&date=2016-03-15&time=10%3A38%3A15&IMEI=695603000000936
+{"id":477,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A1038153643187511430185460000150316&B0000000000&W00&G200310&M990&N06&O0807&T0003#
+Accept new connection from 117.136.47.250:23447...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=48010
+http://api.cellocation.com/cell/?output=json&ci=48010&mnc=0000&mcc=0460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-13: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG200695603000000936,BA&P0460000032bfbb8a&E150101120025&B0000000000&W00&G001690&M990&N11&O0800&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.250:23447 closed.
+Accept new connection from 117.136.47.250:23448...
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=56417
+http://api.cellocation.com/cell/?output=json&ci=56417&mnc=0&mcc=460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&X460,0,12991,56417,95;12991,57202,92;12991,48010,92;12991,57095,96;12991,58711,101;12991,57201,103;12991,61522,107&B0000000000&W00&G200520&M990&N08&O0801&Z40&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N08&Z44&T0005#
+Accept new connection from 117.136.47.225:2304...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=48010
+http://api.cellocation.com/cell/?output=json&ci=48010&mnc=0000&mcc=0460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-13: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG200695603000000936,BA&P0460000032bfbb8a&E160315105359&B0000000000&W00&G001260&M990&N09&O0907&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.225:2304 closed.
+Accept new connection from 117.136.47.225:2305...
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=56417
+http://api.cellocation.com/cell/?output=json&ci=56417&mnc=0&mcc=460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-16: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&X460,0,12991,56417,93;12991,48010,92;12991,57202,93;12991,57095,94;12991,57201,101;12991,58711,101;12991,57097,106&B0000000000&W00&G000520&M990&N07&O1207&Z70&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N07&Z70&T0005#
+Accept new connection from 117.136.47.215:40259...
+IMEI:695603000000936 Time:105613 lat:36432113 lon:114302076 6 01 35 Date:150316
+[{u'y': 36.726441776848, u'x': 114.51583199069}]
+114.515831991 36.7264417768
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00020.0", "lon": 114.51583199069, "date": "2016-03-15", "time": "10:56:13", "lat": 36.726441776848, "velocity": "01"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.515831991,36.7264417768,99.0,695603000000936,01,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7264417768&battery=99.0&lon=114.515831991&date=2016-03-15&time=10%3A56%3A13&IMEI=695603000000936
+{"id":478,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A1056133643211311430207660135150316&B0000000000&W00&G000200&M990&N12&O0907&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.215:40259 closed.
+Accept new connection from 117.136.47.215:40260...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A1057083643209711430209960034150316&B0000000000&W00&G000460&M990&N08&O1407&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N08&Z74&T0005#
+Accept new connection from 117.136.47.204:25609...
+IMEI:695603000000936 Time:105825 lat:36432096 lon:114302090 6 00 00 Date:150316
+[{u'y': 36.726412806778, u'x': 114.51585869975}]
+114.5158587 36.7264128068
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00112.0", "lon": 114.51585869975, "date": "2016-03-15", "time": "10:58:25", "lat": 36.726412806778, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.5158587,36.7264128068,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7264128068&battery=99.0&lon=114.5158587&date=2016-03-15&time=10%3A58%3A25&IMEI=695603000000936
+{"id":479,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A1058253643209611430209060000150316&B0000000000&W00&G001120&M990&N11&O1007&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.204:25609 closed.
+Accept new connection from 117.136.47.204:25610...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A1059223643204711430207860019150316&B0000000000&W00&G000650&M990&N10&O1407&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N10&Z74&T0005#
+Accept new connection from 117.136.47.251:63164...
+IMEI:695603000000936 Time:120028 lat:36431758 lon:114301859 6 02 16 Date:010115
+[{u'y': 36.725854231595, u'x': 114.51547044396}]
+114.515470444 36.7258542316
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00081.0", "lon": 114.51547044396, "date": "2015-01-01", "time": "12:00:28", "lat": 36.725854231595, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.515470444,36.7258542316,99.0,695603000000936,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7258542316&battery=99.0&lon=114.515470444&date=2015-01-01&time=12%3A00%3A28&IMEI=695603000000936
+{"id":480,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A1200283643175811430185960216010115&B0000000000&W00&G000810&M990&N07&O0707&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.251:63164 closed.
+Accept new connection from 117.136.47.251:63165...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A1201093643176311430191260019010115&B0000000000&W00&G001070&M990&N09&O0807&Z44&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N09&Z44&T0005#
+Accept new connection from 117.136.47.204:5129...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=57095
+http://api.cellocation.com/cell/?output=json&ci=57095&mnc=0000&mcc=0460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-17: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&P0460000032bfdf07&B0000000000&W00&G000970&M990&N12&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=57095
+http://api.cellocation.com/cell/?output=json&ci=57095&mnc=0000&mcc=0460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-17: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG200695603000000936,BA&P0460000032bfdf07&E160315110517&B0000000000&W00&G001680&M990&N09&O0600&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.204:5129 closed.
+Accept new connection from 117.136.47.204:5130...
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=57095
+http://api.cellocation.com/cell/?output=json&ci=57095&mnc=0&mcc=460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-17: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&X460,0,12991,57095,95;12991,56417,98;12991,18200,100;12991,57201,102;12991,18600,103;12991,57097,104;12991,57202,105&B0000000000&W00&G001680&M990&N10&O0606&Z70&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N10&Z74&T0005#
+Accept new connection from 117.136.47.227:35804...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12991 and ci=57095
+http://api.cellocation.com/cell/?output=json&ci=57095&mnc=0000&mcc=0460&lac=12991
+0 error : 'ascii' codec can't encode characters in position 0-17: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&P0460000032bfdf07&B0000000000&W00&G200680&M990&N12&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+IMEI:695603000000936 Time:110717 lat:36431777 lon:114301738 6 01 12 Date:150316
+[{u'y': 36.725891566652, u'x': 114.51526394572}]
+114.515263946 36.7258915667
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00058.0", "lon": 114.51526394572, "date": "2016-03-15", "time": "11:07:17", "lat": 36.725891566652, "velocity": "01"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.515263946,36.7258915667,99.0,695603000000936,01,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7258915667&battery=99.0&lon=114.515263946&date=2016-03-15&time=11%3A07%3A17&IMEI=695603000000936
+{"id":481,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A1107173643177711430173860112150316&B0000000000&W00&G000580&M990&N10&O0606&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.227:35804 closed.
+Accept new connection from 117.136.47.198:8585...
+IMEI:695603000000936 Time:120018 lat:36432134 lon:114302086 6 00 00 Date:010115
+[{u'y': 36.72647320831, u'x': 114.51584975635}]
+114.515849756 36.7264732083
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00046.0", "lon": 114.51584975635, "date": "2015-01-01", "time": "12:00:18", "lat": 36.72647320831, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.515849756,36.7264732083,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7264732083&battery=99.0&lon=114.515849756&date=2015-01-01&time=12%3A00%3A18&IMEI=695603000000936
+{"id":482,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A1200183643213411430208660000010115&B0000000000&W00&G000460&M990&N12&O1508&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.198:8585 closed.
+Accept new connection from 117.136.47.198:8586...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A1201093643204111430204560000010115&B0000000000&W00&G000440&M990&N10&O1307&Z44&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N11&Z44&T0005#
+Accept new connection from 117.136.47.247:2086...
+IMEI:695603000000936 Time:111204 lat:36432169 lon:114301975 6 00 01 Date:150316
+[{u'y': 36.726535184945, u'x': 114.51566156146}]
+114.515661561 36.7265351849
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00031.0", "lon": 114.51566156146, "date": "2016-03-15", "time": "11:12:04", "lat": 36.726535184945, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.515661561,36.7265351849,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7265351849&battery=99.0&lon=114.515661561&date=2016-03-15&time=11%3A12%3A04&IMEI=695603000000936
+{"id":483,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A1112043643216911430197560001150316&B0000000000&W00&G000310&M990&N11&O1107&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.247:2086 closed.
+Accept new connection from 117.136.47.247:2087...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A1113013643201211430193460001150316&B0000000000&W00&G000870&M990&N12&O1507&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N12&Z74&T0005#
+Accept new connection from 117.136.47.232:15527...
+IMEI:695603000000936 Time:111419 lat:36432087 lon:114301950 6 00 00 Date:150316
+[{u'y': 36.726399899469, u'x': 114.51562432105}]
+114.515624321 36.7263998995
+{"direction": "99.0", "IMEI": "695603000000936", "battery": "99.0", "altitude": "00039.0", "lon": 114.51562432105, "date": "2016-03-15", "time": "11:14:19", "lat": 36.726399899469, "velocity": "00"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.515624321,36.7263998995,99.0,695603000000936,00,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.7263998995&battery=99.0&lon=114.515624321&date=2016-03-15&time=11%3A14%3A19&IMEI=695603000000936
+{"id":484,"status":"success"}
+LBS P:
+Rev:*MG200695603000000936,BA&A1114193643208711430195060000150316&B0000000000&W00&G000390&M990&N12&O1107&T0003#
+LBS P:
+Rev:
+Connection from 117.136.47.232:15527 closed.
+Accept new connection from 117.136.47.232:15528...
+'deviceadd   select * from device where IMEI = '695603000000936' 
+LBS P:
+Rev:*MG201695603000000936,AB&A1115153643207111430197160000150316&B0000000000&W00&G000640&M990&N11&O1507&Z74&T0004#*MG201695603000000936,AH&B0000000000&W00&M990&N11&Z74&T0005#
+Accept new connection from 101.28.173.224:16655...
+LBS P:
+Rev:Helo
+'deviceadd   insert into device (imei,isused) values (695501000034551,0)
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034551)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034551
+{"id":485,"status":"success"}
+Rev:*MG201695501000034551,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629122855768, u'x': 114.50660241297}]
+114.506602413 36.6291228558
+{"direction": "99.0", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50660241297, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629122855768, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506602413,36.6291228558,99.0,695501000034551,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291228558&battery=99.0&lon=114.506602413&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":486,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629122872738, u'x': 114.50660132247}]
+114.506601322 36.6291228727
+{"direction": "99.0", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50660132247, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629122872738, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506601322,36.6291228727,99.0,695501000034551,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291228727&battery=99.0&lon=114.506601322&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":487,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629118320051, u'x': 114.50659750408}]
+114.506597504 36.6291183201
+{"direction": "99.0", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50659750408, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629118320051, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506597504,36.6291183201,99.0,695501000034551,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291183201&battery=99.0&lon=114.506597504&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":488,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629121779059, u'x': 114.50660186733}]
+114.506601867 36.6291217791
+{"direction": "99.0", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50660186733, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629121779059, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506601867,36.6291217791,99.0,695501000034551,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291217791&battery=99.0&lon=114.506601867&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":489,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 101.28.173.224:16655 closed.
+Accept new connection from 101.28.173.224:16911...
+LBS P:
+Rev:Helo
+'deviceadd   insert into device (imei,isused) values (695501000034552,0)
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034552)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034552
+{"id":490,"status":"success"}
+Rev:*MG201695501000034552,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646026003477, u'x': 114.35675848028}]
+114.35675848 36.6460260035
+{"direction": "99.0", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35675848028, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646026003477, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.35675848,36.6460260035,99.0,695501000034552,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460260035&battery=99.0&lon=114.35675848&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":491,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646026857296, u'x': 114.35676307857}]
+114.356763079 36.6460268573
+{"direction": "99.0", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676307857, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646026857296, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356763079,36.6460268573,99.0,695501000034552,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460268573&battery=99.0&lon=114.356763079&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":492,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646034718103, u'x': 114.3567625337}]
+114.356762534 36.6460347181
+{"direction": "99.0", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.3567625337, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646034718103, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356762534,36.6460347181,99.0,695501000034552,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460347181&battery=99.0&lon=114.356762534&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":493,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646031420894, u'x': 114.35675766609}]
+114.356757666 36.6460314209
+{"direction": "99.0", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35675766609, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646031420894, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356757666,36.6460314209,99.0,695501000034552,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460314209&battery=99.0&lon=114.356757666&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":494,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 101.28.173.224:16911 closed.
+Accept new connection from 101.28.173.224:14881...
+LBS P:
+Rev:Helo
+'deviceadd   insert into device (imei,isused) values (695501000034555,0)
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034555)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034555
+{"id":495,"status":"success"}
+Rev:*MG201695501000034555,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.528459434484, u'x': 114.55654899037}]
+114.55654899 36.5284594345
+{"direction": "99.0", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.55654899037, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528459434484, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.55654899,36.5284594345,99.0,695501000034555,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284594345&battery=99.0&lon=114.55654899&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"id":496,"status":"success"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+Accept new connection from 101.28.173.224:14378...
+LBS P:
+Rev:Helo
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+'deviceadd   insert into device (imei,isused) values (695501000034554,0)
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034554)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034554
+{"id":497,"status":"success"}
+Rev:*MG201695501000034554,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.52846210781, u'x': 114.5565446608}]
+114.556544661 36.5284621078
+{"direction": "99.0", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.5565446608, "date": "2016-03-01", "time": "18:11:37", "lat": 36.52846210781, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556544661,36.5284621078,99.0,695501000034555,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284621078&battery=99.0&lon=114.556544661&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"id":498,"status":"success"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034554,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034554 Time:181137 lat:36303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 36.512486489463, u'x': 114.39018277648}]
+114.390182776 36.5124864895
+{"direction": "99.0", "IMEI": "695501000034554", "battery": "99.0", "altitude": "00227.0", "lon": 114.39018277648, "date": "2016-03-01", "time": "18:11:37", "lat": 36.512486489463, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390182776,36.5124864895,99.0,695501000034554,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5124864895&battery=99.0&lon=114.390182776&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034554
+{"id":499,"status":"success"}
+LBS P:
+Rev:*MG200695501000034554,BA&A1811373630364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+Accept new connection from 101.28.173.224:17668...
+LBS P:
+Rev:Helo
+'deviceadd   insert into device (imei,isused) values (695501000034553,0)
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034553)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034553
+{"id":500,"status":"success"}
+Rev:*MG201695501000034553,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.662751903768, u'x': 114.37343300323}]
+114.373433003 36.6627519038
+{"direction": "99.0", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.37343300323, "date": "2016-03-01", "time": "18:11:37", "lat": 36.662751903768, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373433003,36.6627519038,99.0,695501000034553,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627519038&battery=99.0&lon=114.373433003&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"id":501,"status":"success"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034554,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.528455620506, u'x': 114.55654709925}]
+114.556547099 36.5284556205
+{"direction": "99.0", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.55654709925, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528455620506, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556547099,36.5284556205,99.0,695501000034555,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284556205&battery=99.0&lon=114.556547099&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"id":502,"status":"success"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034554 Time:181137 lat:36303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 36.512483776626, u'x': 114.39018277597}]
+114.390182776 36.5124837766
+{"direction": "99.0", "IMEI": "695501000034554", "battery": "99.0", "altitude": "00227.0", "lon": 114.39018277597, "date": "2016-03-01", "time": "18:11:37", "lat": 36.512483776626, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390182776,36.5124837766,99.0,695501000034554,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5124837766&battery=99.0&lon=114.390182776&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034554
+{"id":503,"status":"success"}
+LBS P:
+Rev:*MG200695501000034554,BA&A1811373630364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+Accept new connection from 101.28.173.224:16958...
+LBS P:
+Rev:Helo
+'deviceadd   select * from device where IMEI = '695501000034552' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034552)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034552
+{"id":504,"status":"success"}
+Rev:*MG201695501000034552,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646026534117, u'x': 114.35675712746}]
+114.356757127 36.6460265341
+{"direction": "99.0", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35675712746, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646026534117, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356757127,36.6460265341,99.0,695501000034552,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460265341&battery=99.0&lon=114.356757127&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":505,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.662747034761, u'x': 114.37343110522}]
+114.373431105 36.6627470348
+{"direction": "99.0", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.37343110522, "date": "2016-03-01", "time": "18:11:37", "lat": 36.662747034761, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373431105,36.6627470348,99.0,695501000034553,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627470348&battery=99.0&lon=114.373431105&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"id":506,"status":"success"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+Accept new connection from 101.28.173.224:17204...
+LBS P:
+Rev:*MG201695501000034554,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:Helo
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.528455940249, u'x': 114.55655250895}]
+114.556552509 36.5284559402
+{"direction": "99.0", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.55655250895, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528455940249, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556552509,36.5284559402,99.0,695501000034555,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284559402&battery=99.0&lon=114.556552509&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"id":507,"status":"success"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+'deviceadd   select * from device where IMEI = '695501000034551' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034551)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034551
+{"id":508,"status":"success"}
+Rev:*MG201695501000034551,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:
+Connection from 101.28.173.224:14881 closed.
+IMEI:695501000034554 Time:181137 lat:36303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 36.512483137225, u'x': 114.39018850339}]
+114.390188503 36.5124831372
+{"direction": "99.0", "IMEI": "695501000034554", "battery": "99.0", "altitude": "00227.0", "lon": 114.39018850339, "date": "2016-03-01", "time": "18:11:37", "lat": 36.512483137225, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390188503,36.5124831372,99.0,695501000034554,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5124831372&battery=99.0&lon=114.390188503&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034554
+{"id":509,"status":"success"}
+LBS P:
+Rev:*MG200695501000034554,BA&A1811373630364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.62912287698, u'x': 114.50660104985}]
+114.50660105 36.629122877
+{"direction": "99.0", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50660104985, "date": "2016-03-01", "time": "18:11:37", "lat": 36.62912287698, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.50660105,36.629122877,99.0,695501000034551,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.629122877&battery=99.0&lon=114.50660105&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":510,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646034720464, u'x': 114.35676280421}]
+114.356762804 36.6460347205
+{"direction": "99.0", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676280421, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646034720464, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356762804,36.6460347205,99.0,695501000034552,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460347205&battery=99.0&lon=114.356762804&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":511,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.6627535028, u'x': 114.3734373509}]
+114.373437351 36.6627535028
+{"direction": "99.0", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.3734373509, "date": "2016-03-01", "time": "18:11:37", "lat": 36.6627535028, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373437351,36.6627535028,99.0,695501000034553,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627535028&battery=99.0&lon=114.373437351&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"id":512,"status":"success"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034554,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034554 Time:181137 lat:36303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 36.512484337637, u'x': 114.39018168511}]
+114.390181685 36.5124843376
+{"direction": "99.0", "IMEI": "695501000034554", "battery": "99.0", "altitude": "00227.0", "lon": 114.39018168511, "date": "2016-03-01", "time": "18:11:37", "lat": 36.512484337637, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390181685,36.5124843376,99.0,695501000034554,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5124843376&battery=99.0&lon=114.390181685&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034554
+{"id":513,"status":"success"}
+LBS P:
+Rev:*MG200695501000034554,BA&A1811373630364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:
+Connection from 101.28.173.224:14378 closed.
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629118760833, u'x': 114.50660404726}]
+114.506604047 36.6291187608
+{"direction": "99.0", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50660404726, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629118760833, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506604047,36.6291187608,99.0,695501000034551,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291187608&battery=99.0&lon=114.506604047&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":514,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646033104917, u'x': 114.35676415756}]
+114.356764158 36.6460331049
+{"direction": "99.0", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676415756, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646033104917, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356764158,36.6460331049,99.0,695501000034552,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460331049&battery=99.0&lon=114.356764158&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":515,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.66275164661, u'x': 114.37343082886}]
+114.373430829 36.6627516466
+{"direction": "99.0", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.37343082886, "date": "2016-03-01", "time": "18:11:37", "lat": 36.66275164661, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373430829,36.6627516466,99.0,695501000034553,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627516466&battery=99.0&lon=114.373430829&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"id":516,"status":"success"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 101.28.173.224:17668 closed.
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629124025806, u'x': 114.50659696087}]
+114.506596961 36.6291240258
+{"direction": "99.0", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50659696087, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629124025806, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506596961,36.6291240258,99.0,695501000034551,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291240258&battery=99.0&lon=114.506596961&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":517,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646026857296, u'x': 114.35676307857}]
+114.356763079 36.6460268573
+{"direction": "99.0", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676307857, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646026857296, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356763079,36.6460268573,99.0,695501000034552,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460268573&battery=99.0&lon=114.356763079&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":518,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 101.28.173.224:16958 closed.
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629117175466, u'x': 114.50660132043}]
+114.50660132 36.6291171755
+{"direction": "99.0", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50660132043, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629117175466, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.50660132,36.6291171755,99.0,695501000034551,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291171755&battery=99.0&lon=114.50660132&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":519,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 101.28.173.224:17204 closed.
+Accept new connection from 101.28.173.224:18183...
+LBS P:
+Rev:Helo
+Accept new connection from 101.28.173.224:14890...
+'deviceadd   insert into device (imei,isused) values (695501000034560,0)
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034560)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034560
+{"id":520,"status":"success"}
+Rev:*MG201695501000034560,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:Helo
+'deviceadd   insert into device (imei,isused) values (695501000034559,0)
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034559)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034559
+{"id":521,"status":"success"}
+Rev:*MG201695501000034559,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034560,AH&B0000000000&M990&N20&Z44&T0004#
+Accept new connection from 101.28.173.224:16396...
+LBS P:
+Rev:Helo
+LBS P:
+Rev:*MG201695501000034559,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034560 Time:181137 lat:35313642 lon:114326540 6 02 06 Date:010316
+Accept new connection from 101.28.173.224:15378...
+[{u'y': 35.528097727729, u'x': 114.55642614815}]
+114.556426148 35.5280977277
+{"direction": "99.0", "IMEI": "695501000034560", "battery": "99.0", "altitude": "00227.0", "lon": 114.55642614815, "date": "2016-03-01", "time": "18:11:37", "lat": 35.528097727729, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556426148,35.5280977277,99.0,695501000034560,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.5280977277&battery=99.0&lon=114.556426148&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034560
+{"id":522,"status":"success"}
+LBS P:
+Rev:*MG200695501000034560,BA&A1811373531364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+'deviceadd   insert into device (imei,isused) values (695501000034558,0)
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034558)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034558
+{"id":523,"status":"success"}
+Rev:*MG201695501000034558,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:Helo
+Accept new connection from 101.28.173.224:17921...
+IMEI:695501000034559 Time:181137 lat:35303642 lon:114226540 6 02 06 Date:010316
+'deviceadd   insert into device (imei,isused) values (695501000034557,0)
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034557)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034557
+[{u'y': 35.512119196153, u'x': 114.39004564066}]
+114.390045641 35.5121191962
+{"direction": "99.0", "IMEI": "695501000034559", "battery": "99.0", "altitude": "00227.0", "lon": 114.39004564066, "date": "2016-03-01", "time": "18:11:37", "lat": 35.512119196153, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390045641,35.5121191962,99.0,695501000034559,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.5121191962&battery=99.0&lon=114.390045641&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034559
+{"id":524,"status":"success"}
+Rev:*MG201695501000034557,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+{"id":525,"status":"success"}
+LBS P:
+Rev:*MG200695501000034559,BA&A1811373530364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034558,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:Helo
+'deviceadd   insert into device (imei,isused) values (695501000034556,0)
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034556)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034556
+{"id":526,"status":"success"}
+Rev:*MG201695501000034556,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034557,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034558 Time:181137 lat:35393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 35.662403795632, u'x': 114.37333859744}]
+114.373338597 35.6624037956
+{"direction": "99.0", "IMEI": "695501000034558", "battery": "99.0", "altitude": "00227.0", "lon": 114.37333859744, "date": "2016-03-01", "time": "18:11:37", "lat": 35.662403795632, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373338597,35.6624037956,99.0,695501000034558,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.6624037956&battery=99.0&lon=114.373338597&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034558
+{"id":527,"status":"success"}
+LBS P:
+Rev:*MG200695501000034558,BA&A1811373539364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034556,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034557 Time:181137 lat:35383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 35.64567638465, u'x': 114.35663645158}]
+114.356636452 35.6456763847
+{"direction": "99.0", "IMEI": "695501000034557", "battery": "99.0", "altitude": "00227.0", "lon": 114.35663645158, "date": "2016-03-01", "time": "18:11:37", "lat": 35.64567638465, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356636452,35.6456763847,99.0,695501000034557,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.6456763847&battery=99.0&lon=114.356636452&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034557
+{"id":528,"status":"success"}
+LBS P:
+Rev:*MG200695501000034557,BA&A1811373538364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034556 Time:181137 lat:35373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 35.628765094021, u'x': 114.50645927875}]
+114.506459279 35.628765094
+{"direction": "99.0", "IMEI": "695501000034556", "battery": "99.0", "altitude": "00227.0", "lon": 114.50645927875, "date": "2016-03-01", "time": "18:11:37", "lat": 35.628765094021, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506459279,35.628765094,99.0,695501000034556,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.628765094&battery=99.0&lon=114.506459279&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034556
+{"id":529,"status":"success"}
+LBS P:
+Rev:*MG200695501000034556,BA&A1811373537364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034560,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034559,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034560 Time:181137 lat:35313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 35.528095878735, u'x': 114.55643182722}]
+114.556431827 35.5280958787
+{"direction": "99.0", "IMEI": "695501000034560", "battery": "99.0", "altitude": "00227.0", "lon": 114.55643182722, "date": "2016-03-01", "time": "18:11:37", "lat": 35.528095878735, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556431827,35.5280958787,99.0,695501000034560,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.5280958787&battery=99.0&lon=114.556431827&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034560
+{"id":530,"status":"success"}
+LBS P:
+Rev:*MG200695501000034560,BA&A1811373531364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034559 Time:181137 lat:35303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 35.51211519063, u'x': 114.3900418199}]
+114.39004182 35.5121151906
+{"direction": "99.0", "IMEI": "695501000034559", "battery": "99.0", "altitude": "00227.0", "lon": 114.3900418199, "date": "2016-03-01", "time": "18:11:37", "lat": 35.51211519063, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.39004182,35.5121151906,99.0,695501000034559,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.5121151906&battery=99.0&lon=114.39004182&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034559
+{"id":531,"status":"success"}
+LBS P:
+Rev:*MG200695501000034559,BA&A1811373530364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034558,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034557,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034558 Time:181137 lat:35393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 35.662404037576, u'x': 114.37334321833}]
+114.373343218 35.6624040376
+{"direction": "99.0", "IMEI": "695501000034558", "battery": "99.0", "altitude": "00227.0", "lon": 114.37334321833, "date": "2016-03-01", "time": "18:11:37", "lat": 35.662404037576, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373343218,35.6624040376,99.0,695501000034558,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.6624040376&battery=99.0&lon=114.373343218&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034558
+{"id":532,"status":"success"}
+LBS P:
+Rev:*MG200695501000034558,BA&A1811373539364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034556,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034557 Time:181137 lat:35383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 35.645669884135, u'x': 114.35663779771}]
+114.356637798 35.6456698841
+{"direction": "99.0", "IMEI": "695501000034557", "battery": "99.0", "altitude": "00227.0", "lon": 114.35663779771, "date": "2016-03-01", "time": "18:11:37", "lat": 35.645669884135, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356637798,35.6456698841,99.0,695501000034557,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.6456698841&battery=99.0&lon=114.356637798&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034557
+{"id":533,"status":"success"}
+LBS P:
+Rev:*MG200695501000034557,BA&A1811373538364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034556 Time:181137 lat:35373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 35.628763945316, u'x': 114.50646336683}]
+114.506463367 35.6287639453
+{"direction": "99.0", "IMEI": "695501000034556", "battery": "99.0", "altitude": "00227.0", "lon": 114.50646336683, "date": "2016-03-01", "time": "18:11:37", "lat": 35.628763945316, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506463367,35.6287639453,99.0,695501000034556,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.6287639453&battery=99.0&lon=114.506463367&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034556
+{"id":534,"status":"success"}
+LBS P:
+Rev:*MG200695501000034556,BA&A1811373537364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034560,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034559,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034560 Time:181137 lat:35313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 35.528099118121, u'x': 114.5564299368}]
+114.556429937 35.5280991181
+{"direction": "99.0", "IMEI": "695501000034560", "battery": "99.0", "altitude": "00227.0", "lon": 114.5564299368, "date": "2016-03-01", "time": "18:11:37", "lat": 35.528099118121, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556429937,35.5280991181,99.0,695501000034560,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.5280991181&battery=99.0&lon=114.556429937&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034560
+{"id":535,"status":"success"}
+LBS P:
+Rev:*MG200695501000034560,BA&A1811373531364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034559 Time:181137 lat:35303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 35.512117080736, u'x': 114.3900423667}]
+114.390042367 35.5121170807
+{"direction": "99.0", "IMEI": "695501000034559", "battery": "99.0", "altitude": "00227.0", "lon": 114.3900423667, "date": "2016-03-01", "time": "18:11:37", "lat": 35.512117080736, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390042367,35.5121170807,99.0,695501000034559,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.5121170807&battery=99.0&lon=114.390042367&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034559
+{"id":536,"status":"success"}
+LBS P:
+Rev:*MG200695501000034559,BA&A1811373530364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034558,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034557,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034558 Time:181137 lat:35393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 35.662403776624, u'x': 114.37334158731}]
+114.373341587 35.6624037766
+{"direction": "99.0", "IMEI": "695501000034558", "battery": "99.0", "altitude": "00227.0", "lon": 114.37334158731, "date": "2016-03-01", "time": "18:11:37", "lat": 35.662403776624, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373341587,35.6624037766,99.0,695501000034558,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.6624037766&battery=99.0&lon=114.373341587&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034558
+{"id":537,"status":"success"}
+LBS P:
+Rev:*MG200695501000034558,BA&A1811373539364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034556,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034557 Time:181137 lat:35383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 35.645670717273, u'x': 114.35663996272}]
+114.356639963 35.6456707173
+{"direction": "99.0", "IMEI": "695501000034557", "battery": "99.0", "altitude": "00227.0", "lon": 114.35663996272, "date": "2016-03-01", "time": "18:11:37", "lat": 35.645670717273, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356639963,35.6456707173,99.0,695501000034557,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.6456707173&battery=99.0&lon=114.356639963&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034557
+{"id":538,"status":"success"}
+LBS P:
+Rev:*MG200695501000034557,BA&A1811373538364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034556 Time:181137 lat:35373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 35.628757158111, u'x': 114.50646363527}]
+114.506463635 35.6287571581
+{"direction": "99.0", "IMEI": "695501000034556", "battery": "99.0", "altitude": "00227.0", "lon": 114.50646363527, "date": "2016-03-01", "time": "18:11:37", "lat": 35.628757158111, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506463635,35.6287571581,99.0,695501000034556,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.6287571581&battery=99.0&lon=114.506463635&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034556
+{"id":539,"status":"success"}
+LBS P:
+Rev:*MG200695501000034556,BA&A1811373537364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034560,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034559,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034560 Time:181137 lat:35313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 35.528101324982, u'x': 114.55643399679}]
+114.556433997 35.528101325
+{"direction": "99.0", "IMEI": "695501000034560", "battery": "99.0", "altitude": "00227.0", "lon": 114.55643399679, "date": "2016-03-01", "time": "18:11:37", "lat": 35.528101324982, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556433997,35.528101325,99.0,695501000034560,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.528101325&battery=99.0&lon=114.556433997&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034560
+{"id":540,"status":"success"}
+LBS P:
+Rev:*MG200695501000034560,BA&A1811373531364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 101.28.173.224:18183 closed.
+IMEI:695501000034559 Time:181137 lat:35303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 35.512118432784, u'x': 114.3900426404}]
+114.39004264 35.5121184328
+{"direction": "99.0", "IMEI": "695501000034559", "battery": "99.0", "altitude": "00227.0", "lon": 114.3900426404, "date": "2016-03-01", "time": "18:11:37", "lat": 35.512118432784, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.39004264,35.5121184328,99.0,695501000034559,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.5121184328&battery=99.0&lon=114.39004264&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034559
+{"id":541,"status":"success"}
+LBS P:
+Rev:*MG200695501000034559,BA&A1811373530364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034558,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:
+Connection from 101.28.173.224:14890 closed.
+LBS P:
+Rev:*MG201695501000034557,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034558 Time:181137 lat:35393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 35.662406223722, u'x': 114.37334077351}]
+114.373340774 35.6624062237
+{"direction": "99.0", "IMEI": "695501000034558", "battery": "99.0", "altitude": "00227.0", "lon": 114.37334077351, "date": "2016-03-01", "time": "18:11:37", "lat": 35.662406223722, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373340774,35.6624062237,99.0,695501000034558,02,99.0)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.6624062237&battery=99.0&lon=114.373340774&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034558
+{"id":542,"status":"success"}
+LBS P:
+Rev:*MG200695501000034558,BA&A1811373539364211421654060206010316&B0000000Waiting for connection...
+Accept new connection from 117.136.47.200:10779...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":545,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N22&O0000&Z40&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.200:10779 closed.
+Accept new connection from 117.136.47.200:10780...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":546,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,60;12573,63441,63;12573,63411,72;12573,16942,73;12573,28673,75;12573,47020,76;12573,28674,79&B0000000000&W00&G000100&M990&N26&O0000&Z40&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N26&Z40&T0004#
+Accept new connection from 117.136.47.216:7125...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":547,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.216:7125 closed.
+Accept new connection from 117.136.47.216:7128...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":548,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,61;12573,63441,62;12573,63411,72;12573,16942,74;12573,28673,74;12573,28674,78&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N26&Z70&T0004#
+Accept new connection from 117.136.47.242:42998...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":549,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.242:42998 closed.
+Accept new connection from 117.136.47.242:42999...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":550,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,60;12573,63441,63;12573,63411,73;12573,28673,74;12573,13121,75;12573,16942,75;12573,28674,75&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N26&Z70&T0004#
+Accept new connection from 117.136.47.226:37351...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":551,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.226:37351 closed.
+Accept new connection from 117.136.47.226:37352...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":552,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,62;12573,63441,63;12573,63411,72;12573,28673,75;12573,16942,75;12573,28674,76&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N27&Z70&T0004#
+Accept new connection from 117.136.47.211:40088...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":553,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N23&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.211:40088 closed.
+Accept new connection from 117.136.47.211:40089...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":554,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,62;12573,63441,64;12573,63411,69;12573,28674,72;12573,13121,73;12573,28673,75;12573,16942,75&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 117.136.47.250:64805...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":555,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.250:64805 closed.
+Accept new connection from 117.136.47.250:64806...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":556,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,64;12573,63441,70;12573,63411,71;12573,28674,71;12573,28673,74;12573,13121,76;12573,16942,77&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 117.136.47.194:60857...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":557,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.194:60857 closed.
+Accept new connection from 117.136.47.194:60859...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":558,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,63;12573,63441,68;12573,63411,72;12573,28674,73;12573,13121,75;12573,28673,75;12573,16941,77&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N24&Z70&T0004#
+Accept new connection from 117.136.47.251:63916...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":559,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.251:63916 closed.
+Accept new connection from 117.136.47.251:63917...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":560,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,63;12573,63441,67;12573,63411,71;12573,13121,76;12573,16942,76;12573,28673,77&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N24&Z70&T0004#
+Accept new connection from 117.136.47.231:32578...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":561,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.231:32578 closed.
+Accept new connection from 117.136.47.231:32579...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":562,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,64;12573,63411,71;12573,28674,73;12573,13121,76;12573,16942,77;12573,28673,77&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N24&Z70&T0004#
+Accept new connection from 117.136.47.242:62345...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":563,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.242:62345 closed.
+Accept new connection from 117.136.47.242:62346...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":564,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,71;12573,63441,69;12573,63411,71;12573,13121,76;12573,28674,76;12573,28673,76;12573,16942,77&B0000000000&W00&G000100&M990&N22&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N22&Z70&T0004#
+Accept new connection from 117.136.47.197:58637...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":565,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N19&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.197:58637 closed.
+Accept new connection from 117.136.47.197:58638...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":566,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,63;12573,63411,72;12573,13121,75;12573,28674,75;12573,16942,76;12573,47020,77;12573,28673,77&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 117.136.47.219:46288...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":567,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.219:46288 closed.
+Accept new connection from 117.136.47.219:46289...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":568,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,69;12573,63441,68;12573,63411,72;12573,13121,76;12573,28673,76;12573,16942,76;12573,47020,78&B0000000000&W00&G000100&M990&N22&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N24&Z70&T0004#
+Accept new connection from 117.136.47.212:7290...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":569,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.212:7290 closed.
+Accept new connection from 117.136.47.212:7291...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":570,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,62;12573,63441,68;12573,28674,72;12573,16942,76;12573,16941,77&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 117.136.47.197:21679...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.197:21679 closed.
+Accept new connection from 117.136.47.197:21680...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,62;12573,63441,67;12573,63411,71;12573,28674,74;12573,16942,74;12573,13121,76;12573,47020,78&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 121.24.253.243:42011...
+LBS P:
+Rev:Helo
+'deviceadd   select * from device where IMEI = '695501000034551' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034551)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034551
+{"status":"failed"}
+Rev:*MG201695501000034551,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629118777804, u'x': 114.50660295676}]
+114.506602957 36.6291187778
+{"direction": "06", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50660295676, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629118777804, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506602957,36.6291187778,99.0,695501000034551,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291187778&battery=99.0&lon=114.506602957&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.62912063871, u'x': 114.50660541106}]
+114.506605411 36.6291206387
+{"direction": "06", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50660541106, "date": "2016-03-01", "time": "18:11:37", "lat": 36.62912063871, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506605411,36.6291206387,99.0,695501000034551,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291206387&battery=99.0&lon=114.506605411&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+Accept new connection from 121.24.253.243:45632...
+LBS P:
+Rev:Helo
+'deviceadd   select * from device where IMEI = '695501000034552' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034552)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034552
+{"status":"failed"}
+Rev:*MG201695501000034552,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646026878542, u'x': 114.35676551317}]
+114.356765513 36.6460268785
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676551317, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646026878542, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356765513,36.6460268785,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460268785&battery=99.0&lon=114.356765513&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629121817239, u'x': 114.50659941371}]
+114.506599414 36.6291218172
+{"direction": "06", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50659941371, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629121817239, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506599414,36.6291218172,99.0,695501000034551,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291218172&battery=99.0&lon=114.506599414&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+Accept new connection from 121.24.253.243:44314...
+LBS P:
+Rev:Helo
+'deviceadd   select * from device where IMEI = '695501000034553' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034553)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034553
+{"status":"failed"}
+Rev:*MG201695501000034553,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646027972883, u'x': 114.35676659468}]
+114.356766595 36.6460279729
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676659468, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646027972883, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356766595,36.6460279729,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460279729&battery=99.0&lon=114.356766595&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.662752173197, u'x': 114.37343327479}]
+114.373433275 36.6627521732
+{"direction": "06", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.37343327479, "date": "2016-03-01", "time": "18:11:37", "lat": 36.662752173197, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373433275,36.6627521732,99.0,695501000034553,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627521732&battery=99.0&lon=114.373433275&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629122351352, u'x': 114.50659995915}]
+114.506599959 36.6291223514
+{"direction": "06", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50659995915, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629122351352, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506599959,36.6291223514,99.0,695501000034551,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291223514&battery=99.0&lon=114.506599959&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 121.24.253.243:42011 closed.
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.662748336302, u'x': 114.37343953061}]
+114.373439531 36.6627483363
+{"direction": "06", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.37343953061, "date": "2016-03-01", "time": "18:11:37", "lat": 36.662748336302, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373439531,36.6627483363,99.0,695501000034553,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627483363&battery=99.0&lon=114.373439531&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+[{u'y': 36.64602873226, u'x': 114.35676037253}]
+114.356760373 36.6460287323
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676037253, "date": "2016-03-01", "time": "18:11:37", "lat": 36.64602873226, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356760373,36.6460287323,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460287323&battery=99.0&lon=114.356760373&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+Accept new connection from 121.24.253.243:43777...
+LBS P:
+Rev:Helo
+'deviceadd   select * from device where IMEI = '695501000034555' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034555)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034555
+{"status":"failed"}
+Rev:*MG201695501000034555,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+Accept new connection from 117.136.47.242:41560...
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.662753266692, u'x': 114.37343191458}]
+114.373431915 36.6627532667
+{"direction": "06", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.37343191458, "date": "2016-03-01", "time": "18:11:37", "lat": 36.662753266692, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373431915,36.6627532667,99.0,695501000034553,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627532667&battery=99.0&lon=114.373431915&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646027970523, u'x': 114.35676632417}]
+114.356766324 36.6460279705
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676632417, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646027970523, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356766324,36.6460279705,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460279705&battery=99.0&lon=114.356766324&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.528457521429, u'x': 114.55654736857}]
+114.556547369 36.5284575214
+{"direction": "06", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.55654736857, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528457521429, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556547369,36.5284575214,99.0,695501000034555,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284575214&battery=99.0&lon=114.556547369&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 121.24.253.243:45632 closed.
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.528459141436, u'x': 114.55654655609}]
+114.556546556 36.5284591414
+{"direction": "06", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.55654655609, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528459141436, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556546556,36.5284591414,99.0,695501000034555,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284591414&battery=99.0&lon=114.556546556&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+[{u'y': 36.662752997263, u'x': 114.37343164301}]
+114.373431643 36.6627529973
+{"direction": "06", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.37343164301, "date": "2016-03-01", "time": "18:11:37", "lat": 36.662752997263, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373431643,36.6627529973,99.0,695501000034553,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627529973&battery=99.0&lon=114.373431643&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+{"status":"failed"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 121.24.253.243:44314 closed.
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.528462420263, u'x': 114.55654925902}]
+114.556549259 36.5284624203
+{"direction": "06", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.55654925902, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528462420263, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556549259,36.5284624203,99.0,695501000034555,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284624203&battery=99.0&lon=114.556549259&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"id":592,"status":"success"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:
+Connection from 117.136.47.242:41560 closed.
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.528462379024, u'x': 114.55654466063}]
+114.556544661 36.528462379
+{"direction": "06", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.55654466063, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528462379024, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556544661,36.528462379,99.0,695501000034555,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.528462379&battery=99.0&lon=114.556544661&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"id":593,"status":"success"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 121.24.253.243:43777 closed.
+Accept new connection from 117.136.47.242:41561...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":594,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,64;12573,63441,64;12573,63411,71;12573,28674,73;12573,13121,74;12573,47020,74;12573,16942,74&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 121.24.253.243:43071...
+LBS P:
+Rev:Helo
+'deviceadd   select * from device where IMEI = '695501000034552' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034552)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034552
+{"id":595,"status":"success"}
+Rev:*MG201695501000034552,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646030692215, u'x': 114.35676740489}]
+114.356767405 36.6460306922
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676740489, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646030692215, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356767405,36.6460306922,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460306922&battery=99.0&lon=114.356767405&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":596,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+Accept new connection from 121.24.253.243:42514...
+LBS P:
+Rev:Helo
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646027616655, u'x': 114.35675685642}]
+114.356756856 36.6460276167
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35675685642, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646027616655, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356756856,36.6460276167,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460276167&battery=99.0&lon=114.356756856&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":597,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+'deviceadd   select * from device where IMEI = '695501000034559' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034559)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034559
+{"id":598,"status":"success"}
+Rev:*MG201695501000034559,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034559,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034559 Time:181137 lat:35303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 35.512115737892, u'x': 114.3900415476}]
+114.390041548 35.5121157379
+{"direction": "06", "IMEI": "695501000034559", "battery": "99.0", "altitude": "00227.0", "lon": 114.3900415476, "date": "2016-03-01", "time": "18:11:37", "lat": 35.512115737892, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390041548,35.5121157379,99.0,695501000034559,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.5121157379&battery=99.0&lon=114.390041548&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034559
+{"id":599,"status":"success"}
+LBS P:
+Rev:*MG200695501000034559,BA&A1811373530364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646027682775, u'x': 114.35676443073}]
+114.356764431 36.6460276828
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676443073, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646027682775, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356764431,36.6460276828,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460276828&battery=99.0&lon=114.356764431&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":600,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034559,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034559 Time:181137 lat:35303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 35.512119159336, u'x': 114.39004782223}]
+114.390047822 35.5121191593
+{"direction": "06", "IMEI": "695501000034559", "battery": "99.0", "altitude": "00227.0", "lon": 114.39004782223, "date": "2016-03-01", "time": "18:11:37", "lat": 35.512119159336, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390047822,35.5121191593,99.0,695501000034559,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.5121191593&battery=99.0&lon=114.390047822&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034559
+{"id":601,"status":"success"}
+LBS P:
+Rev:*MG200695501000034559,BA&A1811373530364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646028215783, u'x': 114.35676334842}]
+114.356763348 36.6460282158
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676334842, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646028215783, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356763348,36.6460282158,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460282158&battery=99.0&lon=114.356763348&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":602,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 121.24.253.243:43071 closed.
+LBS P:
+Rev:*MG201695501000034559,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034559 Time:181137 lat:35303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 35.512115977009, u'x': 114.39004345667}]
+114.390043457 35.512115977
+{"direction": "06", "IMEI": "695501000034559", "battery": "99.0", "altitude": "00227.0", "lon": 114.39004345667, "date": "2016-03-01", "time": "18:11:37", "lat": 35.512115977009, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390043457,35.512115977,99.0,695501000034559,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.512115977&battery=99.0&lon=114.390043457&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034559
+{"id":603,"status":"success"}
+LBS P:
+Rev:*MG200695501000034559,BA&A1811373530364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+Accept new connection from 117.136.47.253:49013...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:*MG201695501000034559,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034559 Time:181137 lat:35303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 35.512117319853, u'x': 114.39004427577}]
+114.390044276 35.5121173199
+{"direction": "06", "IMEI": "695501000034559", "battery": "99.0", "altitude": "00227.0", "lon": 114.39004427577, "date": "2016-03-01", "time": "18:11:37", "lat": 35.512117319853, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390044276,35.5121173199,99.0,695501000034559,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=35.5121173199&battery=99.0&lon=114.390044276&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034559
+{"id":605,"status":"success"}
+LBS P:
+Rev:*MG200695501000034559,BA&A1811373530364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 121.24.253.243:42514 closed.
+LBS P:
+Rev:
+Connection from 117.136.47.253:49013 closed.
+Accept new connection from 117.136.47.253:49014...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,62;12573,63441,66;12573,63411,72;12573,47020,73;12573,13121,75;12573,28674,76;12573,16941,77&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 117.136.47.241:20754...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.241:20754 closed.
+Accept new connection from 117.136.47.241:20755...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,64;12573,63441,66;12573,63411,71;12573,13121,74;12573,16942,75;12573,28674,75;12573,47020,75&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N24&Z70&T0004#
+Accept new connection from 117.136.47.202:24659...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.202:24659 closed.
+Accept new connection from 117.136.47.202:24660...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,64;12573,63441,66;12573,63411,72;12573,13121,75;12573,47020,77;12573,28674,77;12673,18560,80&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N24&Z70&T0004#
+Accept new connection from 117.136.47.202:45007...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.202:45007 closed.
+Accept new connection from 117.136.47.202:45008...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,64;12573,63441,68;12573,13121,75;12573,47020,75;12573,16942,76&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N26&Z70&T0004#
+Accept new connection from 117.136.47.208:60402...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.208:60402 closed.
+Accept new connection from 117.136.47.208:60403...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,64;12573,63441,69;12573,63411,73;12573,13121,73;12573,47020,74;12573,28674,75;12573,16942,78&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N23&Z70&T0004#
+Accept new connection from 117.136.47.227:41781...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.227:41781 closed.
+Accept new connection from 117.136.47.227:41782...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,63;12573,63411,72;12573,13121,74;12573,47020,76;12573,16942,76&B0000000000&W00&G000100&M990&N24&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 117.136.47.242:59848...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.242:59848 closed.
+Accept new connection from 117.136.47.242:59849...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,63;12573,63441,69;12573,63411,72;12573,28674,73;12573,16942,73;12573,13121,74;12573,28673,75&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 117.136.47.230:49947...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.230:49947 closed.
+Accept new connection from 117.136.47.230:49949...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,64;12573,63441,70;12573,63411,71;12573,28673,74;12573,16942,75;12573,16941,76;12573,13121,76&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 117.136.47.235:49475...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.235:49475 closed.
+Accept new connection from 117.136.47.235:49476...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,62;12573,63441,67;12573,63411,70;12573,16941,76;12573,47020,77&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N25&Z70&T0004#
+Accept new connection from 117.136.47.252:16209...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N23&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.252:16209 closed.
+Accept new connection from 117.136.47.252:16210...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"status":"failed"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,62;12573,28674,69;12573,63441,71;12573,16942,72;12573,63411,72;12573,16941,75&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N26&Z70&T0004#
+Accept new connection from 121.24.253.42:27143...
+LBS P:
+Rev:Helo
+'deviceadd   select * from device where IMEI = '695501000034551' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034551)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034551
+{"id":625,"status":"success"}
+Rev:*MG201695501000034551,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629118345502, u'x': 114.50659586833}]
+114.506595868 36.6291183455
+{"direction": "06", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50659586833, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629118345502, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506595868,36.6291183455,99.0,695501000034551,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291183455&battery=99.0&lon=114.506595868&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":626,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+Accept new connection from 121.24.253.42:27446...
+LBS P:
+Rev:Helo
+'deviceadd   select * from device where IMEI = '695501000034552' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034552)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034552
+{"id":627,"status":"success"}
+Rev:*MG201695501000034552,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646027652083, u'x': 114.35676091408}]
+114.356760914 36.6460276521
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676091408, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646027652083, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356760914,36.6460276521,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460276521&battery=99.0&lon=114.356760914&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":628,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+Accept new connection from 121.24.253.42:27464...
+LBS P:
+Rev:Helo
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+'deviceadd   select * from device where IMEI = '695501000034553' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034553)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034553
+{"id":629,"status":"success"}
+Rev:*MG201695501000034553,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629123618752, u'x': 114.50660568475}]
+114.506605685 36.6291236188
+{"direction": "06", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50660568475, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629123618752, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506605685,36.6291236188,99.0,695501000034551,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291236188&battery=99.0&lon=114.506605685&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":630,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.662748596954, u'x': 114.37344116132}]
+114.373441161 36.662748597
+{"direction": "06", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.37344116132, "date": "2016-03-01", "time": "18:11:37", "lat": 36.662748596954, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373441161,36.662748597,99.0,695501000034553,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.662748597&battery=99.0&lon=114.373441161&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"id":631,"status":"success"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+Accept new connection from 121.24.253.42:30291...
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646026345532, u'x': 114.35676659548}]
+114.356766595 36.6460263455
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676659548, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646026345532, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356766595,36.6460263455,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460263455&battery=99.0&lon=114.356766595&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":632,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:Helo
+'deviceadd   select * from device where IMEI = '695501000034554' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034554)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034554
+{"id":633,"status":"success"}
+Rev:*MG201695501000034554,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034554,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034554 Time:181137 lat:36303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 36.512486751525, u'x': 114.390183322}]
+114.390183322 36.5124867515
+{"direction": "06", "IMEI": "695501000034554", "battery": "99.0", "altitude": "00227.0", "lon": 114.390183322, "date": "2016-03-01", "time": "18:11:37", "lat": 36.512486751525, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390183322,36.5124867515,99.0,695501000034554,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5124867515&battery=99.0&lon=114.390183322&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034554
+{"id":634,"status":"success"}
+LBS P:
+Rev:*MG200695501000034554,BA&A1811373630364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629119905422, u'x': 114.5066002309}]
+114.506600231 36.6291199054
+{"direction": "06", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.5066002309, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629119905422, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506600231,36.6291199054,99.0,695501000034551,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291199054&battery=99.0&lon=114.506600231&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":635,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.662749958131, u'x': 114.3734403445}]
+114.373440344 36.6627499581
+{"direction": "06", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.3734403445, "date": "2016-03-01", "time": "18:11:37", "lat": 36.662749958131, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373440344,36.6627499581,99.0,695501000034553,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627499581&battery=99.0&lon=114.373440344&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"id":636,"status":"success"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+Accept new connection from 121.24.253.42:27150...
+LBS P:
+Rev:Helo
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646031487009, u'x': 114.3567652404}]
+114.35676524 36.646031487
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.3567652404, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646031487009, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.35676524,36.646031487,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.646031487&battery=99.0&lon=114.35676524&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":637,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+'deviceadd   select * from device where IMEI = '695501000034555' 
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695501000034555)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695501000034555
+{"id":638,"status":"success"}
+Rev:*MG201695501000034555,AB&A1806143636391211428674060000010316&P04600000311d422c&B0100000000&G002690&M990&N30&O0400&Z34&T0002#
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034554,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+LBS P:
+Rev:*MG201695501000034551,AH&B0000000000&M990&N20&Z44&T0004#
+[{u'y': 36.528463727818, u'x': 114.55654384831}]
+114.556543848 36.5284637278
+{"direction": "06", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.55654384831, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528463727818, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556543848,36.5284637278,99.0,695501000034555,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284637278&battery=99.0&lon=114.556543848&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"id":639,"status":"success"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034554 Time:181137 lat:36303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 36.512490774671, u'x': 114.39018605016}]
+114.39018605 36.5124907747
+{"direction": "06", "IMEI": "695501000034554", "battery": "99.0", "altitude": "00227.0", "lon": 114.39018605016, "date": "2016-03-01", "time": "18:11:37", "lat": 36.512490774671, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.39018605,36.5124907747,99.0,695501000034554,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5124907747&battery=99.0&lon=114.39018605&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034554
+{"id":640,"status":"success"}
+LBS P:
+Rev:*MG200695501000034554,BA&A1811373630364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034551 Time:181137 lat:36373642 lon:114296540 6 02 06 Date:010316
+[{u'y': 36.629120922737, u'x': 114.50660459328}]
+114.506604593 36.6291209227
+{"direction": "06", "IMEI": "695501000034551", "battery": "99.0", "altitude": "00227.0", "lon": 114.50660459328, "date": "2016-03-01", "time": "18:11:37", "lat": 36.629120922737, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.506604593,36.6291209227,99.0,695501000034551,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6291209227&battery=99.0&lon=114.506604593&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034551
+{"id":641,"status":"success"}
+LBS P:
+Rev:*MG200695501000034551,BA&A1811373637364211429654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:
+Connection from 121.24.253.42:27143 closed.
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.662747277889, u'x': 114.37343545423}]
+114.373435454 36.6627472779
+{"direction": "06", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.37343545423, "date": "2016-03-01", "time": "18:11:37", "lat": 36.662747277889, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.373435454,36.6627472779,99.0,695501000034553,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627472779&battery=99.0&lon=114.373435454&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"id":642,"status":"success"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034552,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034552 Time:181137 lat:36383642 lon:114206540 6 02 06 Date:010316
+[{u'y': 36.646026288872, u'x': 114.35676010321}]
+114.356760103 36.6460262889
+{"direction": "06", "IMEI": "695501000034552", "battery": "99.0", "altitude": "00227.0", "lon": 114.35676010321, "date": "2016-03-01", "time": "18:11:37", "lat": 36.646026288872, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.356760103,36.6460262889,99.0,695501000034552,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6460262889&battery=99.0&lon=114.356760103&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034552
+{"id":643,"status":"success"}
+LBS P:
+Rev:*MG200695501000034552,BA&A1811373638364211420654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:
+Connection from 121.24.253.42:27446 closed.
+LBS P:
+Rev:*MG201695501000034554,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.528456223599, u'x': 114.55655386125}]
+114.556553861 36.5284562236
+{"direction": "06", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.55655386125, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528456223599, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556553861,36.5284562236,99.0,695501000034555,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284562236&battery=99.0&lon=114.556553861&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"id":644,"status":"success"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034554 Time:181137 lat:36303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 36.512488954071, u'x': 114.39018141324}]
+114.390181413 36.5124889541
+{"direction": "06", "IMEI": "695501000034554", "battery": "99.0", "altitude": "00227.0", "lon": 114.39018141324, "date": "2016-03-01", "time": "18:11:37", "lat": 36.512488954071, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390181413,36.5124889541,99.0,695501000034554,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5124889541&battery=99.0&lon=114.390181413&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034554
+{"id":645,"status":"success"}
+LBS P:
+Rev:*MG200695501000034554,BA&A1811373630364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:*MG201695501000034553,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034553 Time:181137 lat:36393642 lon:114216540 6 02 06 Date:010316
+[{u'y': 36.662754867482, u'x': 114.37343599042}]
+114.37343599 36.6627548675
+{"direction": "06", "IMEI": "695501000034553", "battery": "99.0", "altitude": "00227.0", "lon": 114.37343599042, "date": "2016-03-01", "time": "18:11:37", "lat": 36.662754867482, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.37343599,36.6627548675,99.0,695501000034553,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.6627548675&battery=99.0&lon=114.37343599&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034553
+{"id":646,"status":"success"}
+LBS P:
+Rev:*MG200695501000034553,BA&A1811373639364211421654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 121.24.253.42:27464 closed.
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+LBS P:
+Rev:*MG201695501000034554,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.528462393577, u'x': 114.55654628359}]
+114.556546284 36.5284623936
+{"direction": "06", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.55654628359, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528462393577, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556546284,36.5284623936,99.0,695501000034555,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284623936&battery=99.0&lon=114.556546284&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"id":647,"status":"success"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+IMEI:695501000034554 Time:181137 lat:36303642 lon:114226540 6 02 06 Date:010316
+[{u'y': 36.512481919137, u'x': 114.39018032096}]
+114.390180321 36.5124819191
+{"direction": "06", "IMEI": "695501000034554", "battery": "99.0", "altitude": "00227.0", "lon": 114.39018032096, "date": "2016-03-01", "time": "18:11:37", "lat": 36.512481919137, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.390180321,36.5124819191,99.0,695501000034554,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5124819191&battery=99.0&lon=114.390180321&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034554
+{"id":648,"status":"success"}
+LBS P:
+Rev:*MG200695501000034554,BA&A1811373630364211422654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 121.24.253.42:30291 closed.
+LBS P:
+Rev:*MG201695501000034555,AH&B0000000000&M990&N20&Z44&T0004#
+IMEI:695501000034555 Time:181137 lat:36313642 lon:114326540 6 02 06 Date:010316
+[{u'y': 36.528461047211, u'x': 114.5565473664}]
+114.556547366 36.5284610472
+{"direction": "06", "IMEI": "695501000034555", "battery": "99.0", "altitude": "00227.0", "lon": 114.5565473664, "date": "2016-03-01", "time": "18:11:37", "lat": 36.528461047211, "velocity": "02"}
+insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (114.556547366,36.5284610472,99.0,695501000034555,02,06)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.5284610472&battery=99.0&lon=114.556547366&date=2016-03-01&time=18%3A11%3A37&IMEI=695501000034555
+{"id":649,"status":"success"}
+LBS P:
+Rev:*MG200695501000034555,BA&A1811373631364211432654060206010316&B0000000000&G002270&M990&N31&O0900&T0011#
+LBS P:
+Rev:
+Connection from 121.24.253.42:27150 closed.
+Accept new connection from 117.136.47.220:50510...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":650,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z40&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.220:50510 closed.
+Accept new connection from 117.136.47.220:50511...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":651,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,60;12573,47022,66;12573,47021,73;12573,28674,73;12573,13121,75;12573,63441,78&B0000000000&W00&G000100&M990&N26&O0000&Z40&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N26&Z40&T0004#
+Accept new connection from 117.136.47.213:61159...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":652,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.213:61159 closed.
+Accept new connection from 117.136.47.213:61160...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":653,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,59;12573,47020,63;12573,47022,67;12573,63441,72;12573,16941,72;12573,13121,74;12573,16942,74&B0000000000&W00&G000100&M990&N27&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N27&Z70&T0004#
+Accept new connection from 117.136.47.242:43311...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":654,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N21&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.242:43311 closed.
+Accept new connection from 117.136.47.242:43312...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=47022
+http://api.cellocation.com/cell/?output=json&ci=47022&mnc=0&mcc=460&lac=12573
+0 error : 'ascii' codec can't encode characters in position 0-15: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695603000000936,AB&X460,0,12573,47022,66;12573,47020,63;12573,16940,63;12573,28674,67;12511,63331,67;12573,16941,73&B0000000000&W00&G000100&M990&N23&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N23&Z70&T0004#
+Accept new connection from 117.136.47.222:26858...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":655,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.222:26858 closed.
+Accept new connection from 117.136.47.222:26859...
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":656,"status":"success"}
+Rev:*MG201695603000000936,AB&X460,0,12573,16940,60;12573,47022,67;12573,13121,73;12573,63441,74;12573,62607,75&B0000000000&W00&G000100&M990&N26&O0000&Z70&T0003#*MG201695603000000936,AH&B0000000000&W00&M990&N26&Z70&T0004#
+Accept new connection from 117.136.47.210:28096...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=16940
+insert into datapoint (lon,lat,battery,IMEI) values (114.476723,36.604794,-1,695603000000936)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.604794&battery=-1&lon=114.476723&date=&time=&IMEI=695603000000936
+{"id":657,"status":"success"}
+Rev:*MG201695603000000936,AB&P04600000311d422c&B0000000000&W00&G000100&M990&N25&O0000&Z70&T0001#*MG201695603000000936,BQ&number:1,115.28.155.91:2332&T0002#
+LBS P:
+Rev:
+Connection from 117.136.47.210:28096 closed.
+Accept new connection from 117.136.47.208:39012...
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12688 and ci=10426
+http://api.cellocation.com/cell/?output=json&ci=10426&mnc=0000&mcc=0460&lac=12688
+0 error : 'ascii' codec can't encode characters in position 0-19: ordinal not in range(128)
+expected string or buffer
+pointadd error in:  expected string or buffer
+error : expected string or buffer
+Rev:*MG201695501000034550,AB&P04600000319028ba&B0000000000&G000580&M990&N00&O0000&Z40&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000319028ba&B0000000000&G000580&M990&N00&O0000&Z90&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000319028ba&B0000000000&G000580&M990&N00&O0000&Z90&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000319028ba&B0000000000&G000580&M990&N00&O0000&Z00&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000311d422c&B0000000000&G000580&M990&N00&O0000&Z90&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000319028ba&B0000000000&G000580&M990&N00&O0000&Z90&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000319028ba&B0000000000&G000580&M990&N00&O0000&Z90&T0001#
+LBS P:
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=28674
+insert into datapoint (lon,lat,battery,IMEI) values (114.477455,36.606468,-1,695501000034550)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606468&battery=-1&lon=114.477455&date=&time=&IMEI=695501000034550
+{"status":"failed"}
+Rev:*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000311df7d1&B0000000000&G000580&M990&N00&O0000&Z90&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000311df7d1&B0000000000&G000580&M990&N00&O0000&Z90&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000319028ba&B0000000000&G000580&M990&N00&O0000&Z90&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000311df7d1&B0000000000&G000580&M990&N00&O0000&Z90&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#*MG201695501000034550,AB&P04600000311d7002&B0000000000&G000580&M990&N23&O0000&Z40&T0001#*MG201695501000034550,BQ&number:1,115.28.155.91:2332&T0002#
+select * from  lbs where mmc=460 and mnc=0 and lac=12573 and ci=28674
+insert into datapoint (lon,lat,battery,IMEI) values (114.477455,36.606468,-1,695501000034550)
+http://page.goodgas.cn/index.php?m=Api&a=index&lat=36.606468&battery=-1&lon=114.477455&date=&time=&IMEI=695501000034550
+{"status":"failed"}
+Rev:*MG201695501000034550,AB&X460,0,12573,28674,64;12573,16940,58;12573,16941,70;12573,47020,70;12573,16942,72;12573,63411,72;12573,28675,72&B000000000

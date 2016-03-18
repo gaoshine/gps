@@ -109,7 +109,7 @@ def pointadd(GPSDataJson, LBS):
         conn = MySQLdb.connect(host="localhost", user="root", passwd="kingstar", db="gis", charset="utf8")
         cursor = conn.cursor()
         # 插入
-        if LBS:
+        if not  LBS:
             sql = "insert into datapoint (lon,lat,battery,IMEI) values (%s,%s,%s,%s)" % (
             values["lon"], values["lat"], values["battery"], values["IMEI"])
         else:
