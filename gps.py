@@ -19,8 +19,10 @@ def tcplink(sock, addr):
         time.sleep(1)
         # 心跳和注册报文
         if isheart(data):
+            print 'isheart \n'
             sock.send('*MG20,YAH#')
         if islogin(data):
+            print 'islogin \n' 
             sock.send('*MG20,YAB#')
         # 解码GPS上传信息
         r = decodegps(data)
@@ -138,6 +140,10 @@ def isheart(mGPS):
     pattern = re.compile('MG201(\d{15}),AH&B', re.IGNORECASE)
     items = re.findall(pattern, mGPS)
     if items:
+        for item in items:
+           imei = item
+           deviceadd(imei)
+
         jsonStr = True
     else:
         jsonStr = False

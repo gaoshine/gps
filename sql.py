@@ -119,6 +119,16 @@ def pointadd(GPSDataJson, LBS):
         print sql
         n = cursor.execute(sql)
 
+        #把数据再向设备表里再写一遍
+        if not LBS:
+            sql = "update device set lon=\"%s\", lat =\"%s\" ,battery =%s   where imei=\"%s\" "  % ( values["lon"], values["lat"], values["battery"], values["IMEI"])
+        else:
+            sql = "update device set lon=\"%s\", lat =\"%s\" ,battery =%s ,velocity=\"%s\" , direction=\"%s\"  where imei=\"%s\" "  % ( values["lon"], values["lat"], values["battery"],values["velocity"],values["direction"], values["IMEI"])
+        n = cursor.execute(sql)
+        print "into device: ",sql
+
+        
+
 
     except Exception, e:
         print 'pointadd error in: ', e
@@ -137,9 +147,32 @@ def deviceadd(imei):
             # 插入
             sql = "insert into device (imei,isused) values (%s,%d)" % (imei,False)
             n = cursor.execute(sql)
-        print "'deviceadd  ",sql
-        return  True
+        print "deviceadd  ",sql,"\n"
+        rd1 =  True
     except Exception,e:
         print 'deviceadd error in:', e
+        rd1 = False
+
+    try:
+        # 连接
+        conn = MySQLdb.connect(host="localhost", user="root", passwd="kingstar", db="logistics", charset="utf8")
+        cursor = conn.cursor()
+        # 查询
+        sql =  "select * from ksoa_gps  where IMEI = '%s' " % imei
+        n = cursor.execute(sql)
+        row = cursor.fetchone()
+        if not row:
+            # 插入
+            sql = "insert into ksoa_gps  (imei,isused) values (%s,%d)" % (imei,False)
+            n = cursor.execute(sql)
+        print "'deviceadd ksoa_gps  ",sql
+        rd2 =  True
+    except Exception,e:
+        print 'deviceadd ksoa_gps error in:', e
+        rd2 = False
+
+    if (rd1 == True and rd2 == True):
+        return True
+    else:
         return False
 
