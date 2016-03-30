@@ -60,12 +60,12 @@ def lbsadd(GPSDataJson, LBSDataJson):
         sql = "insert into lbs  (lon,lat,mmc,mnc,lac,ci,adress) values ('%s','%s',%d,%d,%d,%d,'%s') " % (
         values["lon"], values["lat"], int(values["mcc"]), int(values["mnc"]), int(values["lac"]), int(values["ci"]),
         values["address"])
-        print sql
+        print 'lbsadd sql:  %s \n' % sql
         n = cursor.execute(sql)
 
 
     except Exception, e:
-        print e
+        print 'lbsadd errcode: %s \n' % e
 
 
 def find(imei):
@@ -116,16 +116,18 @@ def pointadd(GPSDataJson, LBS):
             sql = "insert into datapoint (lon,lat,battery,IMEI,velocity,direction) values (%s,%s,%s,%s,%s,%s)" % (
             values["lon"], values["lat"], values["battery"], values["IMEI"],values["velocity"],values["direction"])
 
-        print sql
+        print 'pointadd sql: ',sql
         n = cursor.execute(sql)
 
         #把数据再向设备表里再写一遍
         if not LBS:
-            sql = "update device set lon=\"%s\", lat =\"%s\" ,battery =%s   where imei=\"%s\" "  % ( values["lon"], values["lat"], values["battery"], values["IMEI"])
+            sql = "update device set lon=\"%s\", lat =\"%s\" ,battery =%s  , address=\"\"  where imei=\"%s\" "  % ( values["lon"], values["lat"], values["battery"], values["IMEI"])
         else:
-            sql = "update device set lon=\"%s\", lat =\"%s\" ,battery =%s ,velocity=\"%s\" , direction=\"%s\"  where imei=\"%s\" "  % ( values["lon"], values["lat"], values["battery"],values["velocity"],values["direction"], values["IMEI"])
-        n = cursor.execute(sql)
+            sql = "update device set lon=\"%s\", lat =\"%s\" ,battery =%s ,velocity=\"%s\" , direction=\"%s\" , address=\"\"  where imei=\"%s\" "  % ( values["lon"], values["lat"], values["battery"],values["velocity"],values["direction"], values["IMEI"])
+
         print "into device: ",sql
+        n = cursor.execute(sql)
+
 
         
 
@@ -147,7 +149,9 @@ def deviceadd(imei):
             # 插入
             sql = "insert into device (imei,isused) values (%s,%d)" % (imei,False)
             n = cursor.execute(sql)
-        print "deviceadd  ",sql,"\n"
+            print "deviceadd  ",sql,"\n"
+        else:
+            pass     
         rd1 =  True
     except Exception,e:
         print 'deviceadd error in:', e
@@ -175,4 +179,32 @@ def deviceadd(imei):
         return True
     else:
         return False
+
+#判断接入的设备(imei)的命令指令
+def devicecmd(imei):
+    cmdstr = ''
+    r = ''
+    try:
+        # 连接
+        conn = MySQLdb.connect(host="localhost", user="root", passwd="kingstar", db="gis", charset="utf8")
+        cursor = conn.cursor()
+        # 查询
+        sql =  "select * from device where IMEI = '%s' " % imei
+        n = cursor.execute(sql)
+        print  sql
+        row = cursor.fetchone()
+        if  row:
+            #
+            cmdstr = row[15]
+            sql = "update  device set cmdstr='' where  IMEI='%s'  " % imei
+            n = cursor.execute(sql)
+            print "devicecmd  ",sql,"\n"
+        else:
+            pass
+        r =  cmdstr
+    except Exception,e:
+        print 'devicecmd error in:', e
+        r = False
+    return r
+
 
