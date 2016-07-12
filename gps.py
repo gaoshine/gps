@@ -249,7 +249,7 @@ if __name__ == '__main__':
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # 监听端口:
     s.bind(('0.0.0.0', 2332))
-    s.listen(50)
+    s.listen(100)
     print 'Waiting for connection...'
     while True:
         # 接受一个新连接:

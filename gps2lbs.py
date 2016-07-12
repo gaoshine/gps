@@ -33,7 +33,7 @@ def deviceaddress():
 
             address =  baidugps2address(lon,lat)
             print 'address:',lat,lon,imei,address
-            sql = "update  device set address = '%s'  where  IMEI= '%s' " % (address,imei)
+            sql = "update  device set address = '%s',lasttime=now()  where  IMEI= '%s' " % (address,imei)
             
             n = cursor.execute(sql)
             print "deviceaddress  ",sql,"\n"

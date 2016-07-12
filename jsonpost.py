@@ -25,6 +25,8 @@ def jsonpost(GPSDataJson,LBS):
             values["time"] = ""
         values["lon"] =  d["lon"]
         values["lat"] =  d["lat"]
+        values["velocity"] = d["velocity"]
+        values["direction"] = d["direction"]       
 
 
 
@@ -102,4 +104,4 @@ def lbs(GPSDataJson):
         return r0
 
     except Exception,ex:
-        print 'error',':',ex
+        print 'error_lbs',':',ex
